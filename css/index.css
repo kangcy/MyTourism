@@ -591,9 +591,49 @@
 
 /******************** Head9 *********************/
 
+.head9 {
+	height: 550px;
+	background-image: url("../img/index/13.png");
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: 100% background-color: #f9f9f9;
+	background-color: #f2f2f2;
+	margin-top: 50px;
+}
+
 .head9 .items {
 	width: 1000px;
 	margin-top: 50px;
 	display: inline-block;
 	position: relative;
+}
+
+.head9 .items .totalnum {
+	background: #e8e8e8;
+	border-radius: 100px;
+	width: 100%;
+	height: 20px;
+	position: relative;
+	display: inline-block;
+	margin-top: 50px;
+}
+
+.head9 .items .currnum {
+	background: #ff9436;
+	border-radius: 100px;
+	width: 100px;
+	height: 8px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display: inline-block;
+}
+
+.head9 .items .currpercent {
+	font-family: PingFangSC-Regular;
+	font-size: 12px;
+	color: #4f4f4f;
+	position: absolute;
+	left: 0px;
+	top: -48px;
 }
