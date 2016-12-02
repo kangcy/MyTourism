@@ -44,6 +44,11 @@ function LoginTan(index) {
 		$("#login").find(".login,.register,.forget").addClass("hide");
 		$("#login").find(".step2").removeClass("hide");
 	}
+	//密码重置成功
+	else if(index == 5) {
+		$("#login").find(".logincontent").addClass("hide");
+		$("#login").find(".pwdcontent").removeClass("hide");
+	}
 	$("#tanbg").removeClass("hide");
 	$("#login").removeClass("hide").removeClass("bounceOut").addClass("bounceIn");
 }

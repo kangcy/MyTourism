@@ -495,3 +495,32 @@ body {
 	float: left;
 	margin-left: 40px;
 }
+
+.logincover .pwdcontent {
+	opacity: 0.75;
+	background: #000000;
+	border-radius: 8px;
+	width: 760px;
+	height: 200px;
+	display: inline-block;
+}
+
+.logincover .pwdcontent .top1 {
+	border-bottom: 1px solid #ffffff;
+	width: 94%;
+	line-height: 30px;
+	color: #ffffff;
+	font-size: 18px;
+	text-align: left;
+	margin: 15px 3%;
+	padding-bottom: 10px;
+}
+
+.logincover .pwdcontent .top2 {
+	font-family: PingFangSC-Regular;
+	font-size: 24px;
+	color: #ffffff;
+	line-height: 38px;
+	margin-top: 25px;
+	display: inline-block;
+}

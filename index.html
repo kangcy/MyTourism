@@ -228,8 +228,8 @@
 		<!--登录、注册框-->
 		<div class="logincover hide" id="login">
 			<div class="logincontent">
-				<img src="img/index/22.png" class="fr mr10 mt10" onclick="LoginTan(0)">
-				<img src="img/index/21.jpg" class="full">
+				<img src="img/common/2.png" class="fr mr10 mt10" onclick="LoginTan(0)">
+				<img src="img/common/3.jpg" class="full">
 				<!--登录-->
 				<div class="login">
 					<input type="text" class="input" placeholder="手机号" />
@@ -255,7 +255,13 @@
 					<input type="text" class="input fl" placeholder="请输入收到的验证码" /><span class="ml5 mt20 fl" style="color:#f5a623;">58s</span><span class="cfff fl ml5 mt20">沒收到？<span style="color:#f5a623;">再发一次</span></span>
 					<input type="text" class="input fl" placeholder="设置新密码" />
 					<input type="text" class="input fl" placeholder="在输入一次新密码" />
-					<div class="btnLogin">立即重置</div>
+					<div class="btnLogin" onclick="LoginTan(5)">立即重置</div>
+				</div>
+			</div>
+			<!--密码重置成功-->
+			<div class="pwdcontent hide">
+				<div class="top1">提示<img src="img/common/2.png" class="fr" onclick="LoginTan(0)"></div>
+				<div class="top2"><img src="img/common/1.png" class="fl" style="margin-left:200px;"><span class="ml10 fl">恭喜您，密码重置成功！<span style="color:#f5a623;">立即登录</span></span>
 				</div>
 			</div>
 		</div>
