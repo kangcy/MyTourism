@@ -231,3 +231,13 @@
 	display: inline-block;
 	margin: 30px;
 }
+
+
+.resultcontent
+{
+	opacity:0.74;
+background:#000000;
+border-radius:8px;
+width:665px;
+height:371px;
+}

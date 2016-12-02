@@ -122,7 +122,6 @@
 				</div>
 			</div>
 		</div>
-
 		<!--底部-->
 		<div class="bottom tc" id="bottom">
 			<p class="bottom1"><span>关于我们</span><span class="split">|</span><span>联系我们</span><span class="split">|</span><span>服务协议</span><span class="split">|</span><span>帮助中心</span></p>
@@ -142,6 +141,16 @@
 			</div>
 			<div class="item item4"></div>
 		</div>
+		<!--提交弹窗-->
+		<div class="tanbg hide" id="tanbg"></div>
+		<div class="logincover hide" id="result">
+			<div class="resultcontent">
+				<img src="img/common/2.png" class="fr mr10 mt10">
+				<p>您已完成订制需要的提交</p>
+				<p>您的私人管家将于24个小时内与您联系</p>
+				<p>准备开始您的个性之旅吧！</p>
+			</div>
+		</div>
 	</body>
 
 </html>
@@ -155,25 +164,23 @@
 	$(function() {
 
 	});
-	
-	
-	
-//定制流程
-function Step(index) {
-	//流程1
-	if(index == 1) {
-		$("#step").find(".step2,.step3").addClass("hide");
-		$("#step").find(".step1").removeClass("hide");
+
+	//定制流程
+	function Step(index) {
+		//流程1
+		if(index == 1) {
+			$("#step").find(".step2,.step3").addClass("hide");
+			$("#step").find(".step1").removeClass("hide");
+		}
+		//流程2
+		else if(index == 2) {
+			$("#step").find(".step1,.step3").addClass("hide");
+			$("#step").find(".step2").removeClass("hide");
+		}
+		//流程3
+		else if(index == 3) {
+			$("#step").find(".step1,.step2").addClass("hide");
+			$("#step").find(".step3").removeClass("hide");
+		}
 	}
-	//流程2
-	else if(index == 2) {
-		$("#step").find(".step1,.step3").addClass("hide");
-		$("#step").find(".step2").removeClass("hide");
-	}
-	//流程3
-	else if(index == 3) {
-		$("#step").find(".step1,.step2").addClass("hide");
-		$("#step").find(".step3").removeClass("hide");
-	}
-}
 </script>
