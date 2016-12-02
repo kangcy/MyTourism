@@ -1,0 +1,159 @@
+html,
+body {
+	background: #f7f7f7;
+}
+
+
+/******************** Head3 *********************/
+
+.head3 {
+	position: relative;
+}
+
+.head3 .cover {
+	left: 0px;
+	bottom: 15%;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+.head3 .cover div {
+	width: 840px;
+	height: 250px;
+	line-height: 250px;
+	display: inline-block;
+	opacity: 0.35;
+	background: #000000;
+	border-radius: 8px;
+	font-size: 36px;
+	color: #ffffff;
+}
+
+
+/******************** Head4 *********************/
+
+.head4 .items {
+	width: 1000px;
+	height: 400px;
+	display: inline-block;
+	background: #fff;
+}
+
+.head4 .items .title {
+	font-family: PingFangSC-Medium;
+	font-size: 24px;
+	color: #4a4a4a;
+	border-bottom: 1px dashed #979797;
+	margin: 50px 150px;
+	padding-bottom: 30px;
+}
+
+.head4 .items .desc {
+	width: 60%;
+	padding-bottom: 30px;
+	display: inline-block;
+}
+
+.head4 .items .item {
+	line-height: 33px;
+	margin-bottom: 20px;
+	width: 100%;
+	float: left;
+}
+
+.head4 .items .item .left1 {
+	width: 100px;
+	display: inline-block;
+	float: left;
+}
+
+.head4 .items .tip {
+	font-family: PingFangSC-Regular;
+	font-size: 14px;
+	color: #868686;
+}
+
+.head4 .items .item span {
+	float: left;
+}
+
+.head4 .items .item .city {
+	font-family: PingFangSC-Semibold;
+	font-size: 12px;
+	color: #ff9436;
+	margin-left: 10px;
+}
+
+.head4 .items .item .input {
+	border: 1px solid #dadada;
+	border-radius: 3px;
+	width: 248px;
+	height: 33px;
+	float: left;
+	text-align: center;
+	outline: none;
+}
+
+.head4 .items .item .next {
+	background: #ff9436;
+	border-radius: 100px;
+	width: 120px;
+	height: 35px;
+	display: inline-block;
+	font-size: 14px;
+	color: #ffffff;
+	margin-left: 100px;
+}
+
+
+/******************** Head5 *********************/
+
+.head5 .items {
+	width: 1000px;
+	display: inline-block;
+	background: #fff;
+}
+
+.head5 .items .title {
+	font-size: 24px;
+	color: #4a4a4a;
+	line-height: 25px;
+	padding: 30px 0px;
+	background: #f7f7f7;
+}
+
+.head5 .items .title span {
+	font-size: 18px;
+	margin-left: 15px;
+}
+
+.head5 .items .left {
+	width: 50%;
+	display: inline-block;
+}
+
+.head5 .items .left .info {
+	font-size: 12px;
+	color: #4a4a4a;
+	text-align: left;
+	margin: 15px;
+}
+
+.head5 .items .left .info .name {
+	font-family: PingFangSC-Regular;
+	color: #21a7c6;
+}
+
+.head5 .items .left .info .date {
+	font-family: PingFangSC-Regular;
+	margin-left: 15px;
+}
+
+.head5 .items .left .desc {
+	line-height: 20px;
+}
+
+.head5 .items .left .desc p {
+	font-family: PingFangSC-Semibold;
+}

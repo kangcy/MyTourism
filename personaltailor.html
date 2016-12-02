@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>私人定制</title>
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/personaltailor.css">
+		<link rel="stylesheet" href="css/animate.css">
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="full head1 tc fl">
+			<div class="items tr">
+				<div class="item" onclick="LoginTan(1)">登录</div>
+				<div class="item border" onclick="LoginTan(2)">注册</div>
+			</div>
+		</div>
+		<div class="full head2 tc fl">
+			<div class="items f16">
+				<div class="item first"><img src="img/index/logo.png" /></div>
+				<div class="item">首页</div>
+				<div class="item">会员专享</div>
+				<div class="item">私人订制</div>
+				<div class="item">关于我们</div>
+				<div class="item">旅游众筹</div>
+				<div class="item">订购/退订</div>
+			</div>
+		</div>
+		<div class="head3">
+			<img src="img/personal/1.png" class="full" />
+			<div class="cover">
+				<div>一分钟订制您的私人行程！</div>
+			</div>
+		</div>
+		<div class="full head4 tc fl">
+			<div class="items mt30">
+				<div class="title">立即订制</div>
+				<div class="desc">
+					<div class="item">
+						<div class="left1"><span class="tip fr mr10"><span style="color:#ff001f;margin-right:5px;margin-top: 3px;">*</span>目的地</span>
+						</div><input type="text" class="input" /><span class="tip ml10">热门推荐：</span><span class="city">长城</span><span class="city">大理</span><span class="city">张家界</span><span class="city">敦煌</span></div>
+					<div class="item">
+						<div class="left1"><span class="tip fr mr10"><span style="color:#ff001f;margin-right:5px;margin-top: 3px;">*</span>人均预算</span>
+						</div>
+						<input type="text" class="input" />
+					</div>
+					<div class="item">
+						<div class="left1"><span class="tip fr mr10">出发时间</span>
+						</div>
+						<input type="text" class="input Wdate" id="time" onclick="WdatePicker({ el: $dp.$('time'), dateFmt: 'yyyy-MM-dd' })" /><input type="number" class="input ml10" style="width:50px" /><span class="fl ml10">天</span>
+					</div>
+					<div class="item">
+						<div class="next fl">下一步</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--成功案例-->
+		<div class="full head5 fl tc">
+			<div class="items">
+				<div class="title">成功案例<span>Limit spike</span></div>
+				<div class="left fl">
+					<img src="img/personal/3.png" class="full" />
+					<div class="info">
+						<span class="name">Tillie Wright</span><span class="date">2016-11-15</span>
+						<div class="desc">
+							<p class="full bold">客户评价</p>
+							满意！这次我们一行6人，虽然都有多次出国旅行的经历。但自己组团，还是第一次。在行前旅游管家已经做了非常周密的安排，但直到登机前，心中还是难免忐忑不安。接下来的旅行经历，让我们逐渐打消了顾虑。
+						</div>
+					</div>
+				</div>
+				<div class="right fr"><img src="img/personal/4.png" /></div>
+			</div>
+		</div>
+
+		<!--底部-->
+		<div class="bottom tc" id="bottom">
+			<p class="bottom1"><span>关于我们</span><span class="split">|</span><span>联系我们</span><span class="split">|</span><span>服务协议</span><span class="split">|</span><span>帮助中心</span></p>
+			<p class="bottom2"><span>友情链接：</span><span class="split">&nbsp;</span><span>链接1</span><span class="split">&nbsp;</span><span>链接2</span><span class="split">&nbsp;</span><span>链接3</span><span class="split">&nbsp;</span><span>链接4</span><span class="split">&nbsp;</span><span>链接5</span></p>
+			<div class="bottom3">2016旅游管家 版权所有 技术支持：创跃慧工作室</div>
+		</div>
+		<!--悬浮框-->
+		<div class="fright">
+			<div class="item item1">
+				<div class="tip">电话</div>
+			</div>
+			<div class="item item2">
+				<div class="tip">咨询</div>
+			</div>
+			<div class="item item3">
+				<div class="tip">微信</div>
+			</div>
+			<div class="item item4"></div>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript " src="js/jquery-1.10.2.min.js "></script>
+<script type="text/javascript " src="js/base.js"></script>
+<script type="text/javascript" src="js/datePicker/WdatePicker.js"></script>
+<script type="text/javascript ">
+	var currentIndex = 1;
+	var recordCount = 100;
+	var pageSize = 5;
+	$(function() {
+
+	});
+</script>
