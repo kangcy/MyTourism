@@ -26,3 +26,14 @@ function LoginTan(index) {
 		$("#login").removeClass("hide").removeClass("bounceOut").addClass("bounceIn");
 	}
 }
+
+//注册弹窗
+function RegisterTan(index) {
+	if(index == 0) {
+		$("#tanbg").addClass("hide");
+		$("#register").removeClass("bounceIn").addClass("bounceOut").addClass("hide");
+	} else {
+		$("#tanbg").removeClass("hide");
+		$("#register").removeClass("hide").removeClass("bounceOut").addClass("bounceIn");
+	}
+}
