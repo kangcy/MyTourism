@@ -18,22 +18,32 @@ function InitBottom() {
 
 //登录弹窗
 function LoginTan(index) {
-	if(index == 0) {
+	//关闭弹窗
+	if(index <= 0) {
 		$("#tanbg").addClass("hide");
 		$("#login").removeClass("bounceIn").addClass("bounceOut").addClass("hide");
-	} else {
-		$("#tanbg").removeClass("hide");
-		$("#login").removeClass("hide").removeClass("bounceOut").addClass("bounceIn");
+		return;
 	}
-}
-
-//注册弹窗
-function RegisterTan(index) {
-	if(index == 0) {
-		$("#tanbg").addClass("hide");
-		$("#register").removeClass("bounceIn").addClass("bounceOut").addClass("hide");
-	} else {
-		$("#tanbg").removeClass("hide");
-		$("#register").removeClass("hide").removeClass("bounceOut").addClass("bounceIn");
+	//登录
+	else if(index == 1) {
+		$("#login").find(".register,.forget").addClass("hide");
+		$("#login").find(".login").removeClass("hide");
 	}
+	//注册
+	else if(index == 2) {
+		$("#login").find(".login,.forget").addClass("hide");
+		$("#login").find(".register").removeClass("hide");
+	}
+	//找回密码第一步
+	else if(index == 3) {
+		$("#login").find(".login,.register,.forget").addClass("hide");
+		$("#login").find(".step1").removeClass("hide");
+	}
+	//找回密码第二步
+	else if(index == 4) {
+		$("#login").find(".login,.register,.forget").addClass("hide");
+		$("#login").find(".step2").removeClass("hide");
+	}
+	$("#tanbg").removeClass("hide");
+	$("#login").removeClass("hide").removeClass("bounceOut").addClass("bounceIn");
 }

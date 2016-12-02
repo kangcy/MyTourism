@@ -194,9 +194,11 @@ body {
 .mt20 {
 	margin-top: 20px !important;
 }
+
 .mt30 {
 	margin-top: 30px !important;
 }
+
 .mb0 {
 	margin-bottom: 0px !important;
 }
@@ -440,7 +442,7 @@ body {
 	text-align: center;
 }
 
-.login {
+.logincover .logincontent {
 	background-image: url("../img/index/21.png");
 	background-repeat: repeat;
 	background-position: center center;
@@ -450,7 +452,7 @@ body {
 	display: inline-block;
 }
 
-.login .input {
+.logincover .logincontent .input {
 	background: #ffffff;
 	border: 1px solid #e97c1d;
 	border-radius: 3px;
@@ -462,7 +464,7 @@ body {
 	text-indent: 10px;
 }
 
-.login .btnLogin {
+.logincover .logincontent .btnLogin {
 	background: #e97c1d;
 	border-radius: 3px;
 	width: 288px;
@@ -476,78 +478,20 @@ body {
 	cursor: pointer;
 }
 
-.login .action {
-	width: 288px;
-	display: inline-block;
-	margin-top: 10px;
-}
-
-.login .forget {
-	font-family: PingFangSC-Regular;
-	font-size: 14px;
-	color: #f5a623;
-}
-
-.login .register {
-	font-family: PingFangSC-Regular;
-	font-size: 14px;
-	color: #cbcbcb;
-}
-
-
-
-/******************** 注册框 *********************/
-
-.registercover {
-	position: fixed;
-	left: 0px;
-	top: 30%;
-	width: 100%;
-	z-index: 1000;
-	text-align: center;
-}
-
-.register {
-	background-image: url("../img/index/21.png");
-	background-repeat: repeat;
-	background-position: center center;
-	border-radius: 8px;
-	width: 520px;
-	height: 371px;
-	display: inline-block;
-}
-
-.register .input {
-	background: #ffffff;
-	border: 1px solid #e97c1d;
-	border-radius: 3px;
-	width: 286px;
-	height: 33px;
-	text-align: left;
-	outline: none;
-	margin-top: 10px;
-	text-indent: 10px;
-}
-
-.register .btnLogin {
-	background: #e97c1d;
-	border-radius: 3px;
-	width: 288px;
-	height: 35px;
-	line-height: 35px;
-	font-family: PingFangSC-Regular;
-	font-size: 16px;
-	color: #ffffff;
-	display: inline-block;
-	margin-top: 10px;
-	cursor: pointer;
-}
-
-.register .action {
+.logincover .logincontent .action {
 	width: 288px;
 	display: inline-block;
 	margin-top: 10px;
 	font-family: PingFangSC-Regular;
 	font-size: 14px;
-	color: #f5a623;
+}
+
+.logincover .logincontent .step2 .input {
+	float: left;
+	margin-left: 40px;
+}
+
+.logincover .logincontent .step2 .btnLogin {
+	float: left;
+	margin-left: 40px;
 }
