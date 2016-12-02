@@ -8,7 +8,8 @@
 		<link rel="stylesheet" href="css/common.css">
 		<link rel="stylesheet" href="css/travelchips.css">
 		<link rel="stylesheet" href="css/animate.css">
-		<link rel="stylesheet" href="js/unslider/unslider.css" unslider="1">
+		<link rel="stylesheet" href="js/msgbox/Page.css" />
+		<link rel="stylesheet" href="js/msgbox/msgbox.css" />
 	</head>
 
 	<body>
@@ -30,7 +31,7 @@
 				<div class="item">订购/退订</div>
 			</div>
 		</div>
-		<div class="head3 banner fl">
+		<div class="full head3 tc fl">
 			<div class="items">
 				<div class="item curr">全部</div>
 				<div class="item">进行中</div>
@@ -42,7 +43,28 @@
 		<!--旅游众筹-->
 		<div class="full head4 fl tc">
 			<div class="items tl">
-				<div class="item2 mt20">
+				<div class="item">
+					<img class="left fl" src="img/index/9.png" />
+					<div class="right fl">
+						<div class="title1">梦在心中，行在脚下——Cycling France，向最伟大的自行车运动致敬</div>
+						<div class="full tl" style="line-height: 35px;">
+							<span class="title2 fl">市场价</span><span class="price fl">¥5999</span>
+							<div class="try fr">1元试试</div>
+						</div>
+						<div class="totalnum mt15">
+							<div class="currnum"></div>
+							<div class="currpercent">35%</div>
+						</div>
+						<p><span class="title2">已支持</span><span class="already">¥1243</span><span class="title2 fr">剩余时间：34天</span></p>
+						<div class="list">
+							<div><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
+							<div><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
+							<div><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
+							<div><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
 					<img class="left fl" src="img/index/9.png" />
 					<div class="right fl">
 						<div class="title1">梦在心中，行在脚下——Cycling France，向最伟大的自行车运动致敬</div>
@@ -65,6 +87,7 @@
 				</div>
 			</div>
 		</div>
+		<div id="divPager" align="center" style="margin-top:50px;float: left;width: 100%;"></div>
 
 		<!--底部-->
 		<div class="bottom tc" id="bottom">
@@ -102,7 +125,12 @@
 
 </html>
 <script type="text/javascript " src="js/jquery-1.10.2.min.js "></script>
+<script type="text/javascript" src="js/msgbox/msgbox.js"></script>
+<script type="text/javascript" src="js/jquery.myPagination5.0.js"></script>
 <script type="text/javascript ">
+	var currentIndex = 1;
+	var recordCount = 100;
+	var pageSize = 5;
 	$(function() {
 		if($("body").height() < window.innerHeight) {
 			$("#bottom").css({
@@ -111,6 +139,21 @@
 				"left": "0px"
 			});
 		}
+
+		$("#divPager").myPagination({
+			currPage: currentIndex,
+			pageCount: Math.ceil(recordCount / pageSize),
+			pageSize: pageSize,
+			links: 'javascript:void(0);',
+			cssStyle: 'jogger',
+			ajax: {
+				on: false,
+				onClick: function(page) {
+					ZENG.msgbox.show(" 正在加载" + page + "页，请稍后...", 6, 1000);
+					window.location.href = "/travelchips.html?page=" + page;
+				}
+			}
+		});
 	});
 
 	//登录弹窗
