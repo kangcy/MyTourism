@@ -38,22 +38,40 @@
 		<div class="full head4 tc fl">
 			<div class="items mt30">
 				<div class="title">立即订制</div>
-				<div class="desc">
-					<div class="item">
-						<div class="left1"><span class="tip fr mr10"><span style="color:#ff001f;margin-right:5px;margin-top: 3px;">*</span>目的地</span>
-						</div><input type="text" class="input" /><span class="tip ml10">热门推荐：</span><span class="city">长城</span><span class="city">大理</span><span class="city">张家界</span><span class="city">敦煌</span></div>
-					<div class="item">
-						<div class="left1"><span class="tip fr mr10"><span style="color:#ff001f;margin-right:5px;margin-top: 3px;">*</span>人均预算</span>
+				<div class="desc ">
+					<p class="need tl mb20">带<span style="color:#ff001f;">*</span>号为必填项～</p>
+					<div class="step1 hide">
+						<div class="item">
+							<div class="left1"><span class="tip fr mr10"><span style="color:#ff001f;margin-right:5px;margin-top: 3px;">*</span>目的地</span>
+							</div><input type="text" class="input" /><span class="tip ml10">热门推荐：</span><span class="city">长城</span><span class="city">大理</span><span class="city">张家界</span><span class="city">敦煌</span></div>
+						<div class="item">
+							<div class="left1"><span class="tip fr mr10"><span style="color:#ff001f;margin-right:5px;margin-top: 3px;">*</span>人均预算</span>
+							</div>
+							<input type="text" class="input" />
 						</div>
-						<input type="text" class="input" />
-					</div>
-					<div class="item">
-						<div class="left1"><span class="tip fr mr10">出发时间</span>
+						<div class="item">
+							<div class="left1"><span class="tip fr mr10">出发时间</span>
+							</div>
+							<input type="text" class="input Wdate" id="time" onclick="WdatePicker({ el: $dp.$('time'), dateFmt: 'yyyy-MM-dd' })" /><input type="number" class="input ml10" style="width:50px" /><span class="fl ml10">天</span>
 						</div>
-						<input type="text" class="input Wdate" id="time" onclick="WdatePicker({ el: $dp.$('time'), dateFmt: 'yyyy-MM-dd' })" /><input type="number" class="input ml10" style="width:50px" /><span class="fl ml10">天</span>
+						<div class="item">
+							<div class="next fl" style="margin-left: 100px;">下一步</div>
+						</div>
 					</div>
-					<div class="item">
-						<div class="next fl">下一步</div>
+					<div class="step2">
+						<div class="item">
+							<div class="left1"><span class="tip fr mr10">酒店星级</span></div><input type="text" class="input" /></div>
+						<div class="item">
+							<div class="left1"><span class="tip  fr mr10">出行人员</span></div><input type="number" class="input" style="width:50px" /><span class="fl ml10">成人</span><input type="number" class="input ml10" style="width:50px" /><span class="fl ml10">儿童</span><input type="number" class="input ml10" style="width:50px" /><span class="fl ml10">老人</span></div>
+						<div class="item">
+							<div class="left1"><span class="tip fr mr10">备注留言</span>
+							</div>
+							<textarea class="remark"></textarea>
+						</div>
+						<div class="item">
+							<div class="prev fl" style="margin-left: 100px;">上一步</div>
+							<div class="next fl ml15">下一步</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -82,9 +100,7 @@
 						</div>
 						<div class="desc">
 							<p>秘鲁巴西游玩12天</p>
-							<div class="tl">里约热内卢（Rio de Janeiro）：观赏美丽的伊帕内马（Ipanema）海滩上的游行，探寻充满艺术气息的圣特蕾莎（Santa Teresa），或者在拉帕（Lapa）的桑巴俱乐部热舞。
-萨尔瓦多（Salvador）：白天在多姿多彩的Pelourinho闲逛，夜晚在喧闹的巴西黑人文化之都随着令人上瘾的节奏舞动。
-欧鲁普雷图（Ouro Prêto）：在南美最美的殖民时代小镇里，沿着鹅卵石小街寻觅闹鬼的教堂和难得一见的巴西朗姆酒cachacas。</div>
+							<div class="tl">里约热内卢（Rio de Janeiro）：观赏美丽的伊帕内马（Ipanema）海滩上的游行，探寻充满艺术气息的圣特蕾莎（Santa Teresa），或者在拉帕（Lapa）的桑巴俱乐部热舞。 萨尔瓦多（Salvador）：白天在多姿多彩的Pelourinho闲逛，夜晚在喧闹的巴西黑人文化之都随着令人上瘾的节奏舞动。 欧鲁普雷图（Ouro Prêto）：在南美最美的殖民时代小镇里，沿着鹅卵石小街寻觅闹鬼的教堂和难得一见的巴西朗姆酒cachacas。</div>
 						</div>
 					</div>
 				</div>

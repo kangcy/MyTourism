@@ -33,7 +33,6 @@
 
 .head4 .items {
 	width: 1000px;
-	height: 400px;
 	display: inline-block;
 	background: #fff;
 }
@@ -43,7 +42,7 @@
 	font-size: 24px;
 	color: #4a4a4a;
 	border-bottom: 1px dashed #979797;
-	margin: 50px 150px;
+	margin: 50px 150px 10px;
 	padding-bottom: 30px;
 }
 
@@ -72,6 +71,12 @@
 	color: #868686;
 }
 
+.head4 .items .need {
+	font-family: .PingFangSC-Regular;
+	font-size: 14px;
+	color: #4a4a4a;
+}
+
 .head4 .items .item span {
 	float: left;
 }
@@ -93,6 +98,25 @@
 	outline: none;
 }
 
+.head4 .items .item .remark {
+	border: 1px solid #dadada;
+	border-radius: 3px;
+	width: 490px;
+	height: 100px;
+	outline: none;
+	resize: none;
+}
+
+.head4 .items .item .prev {
+	background: #ffc490;
+	border-radius: 100px;
+	width: 120px;
+	height: 35px;
+	display: inline-block;
+	font-size: 14px;
+	color: #ffffff;
+}
+
 .head4 .items .item .next {
 	background: #ff9436;
 	border-radius: 100px;
@@ -101,7 +125,6 @@
 	display: inline-block;
 	font-size: 14px;
 	color: #ffffff;
-	margin-left: 100px;
 }
 
 
