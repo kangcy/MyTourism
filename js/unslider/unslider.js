@@ -16,7 +16,7 @@
             pause: true,    // 鼠标悬停是否暂停滚动 (boolean)
             loop: true,     // 是否无限循环 (boolean)
             keys: true,   // 是否开启键盘快捷键 (boolean)
-            dots: false,  // 是否显示圆点 (boolean)
+            dots: true,  // 是否显示圆点 (boolean)
             arrows: false, // display prev/next arrows (boolean)
             prev: '←',   // 上一张幻灯片点击按钮的文本或HTML (string)
             next: '→',   // 下一张幻灯片点击按钮的文本或HTML (string)

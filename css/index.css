@@ -14,8 +14,8 @@
 
 .head1 .items .item {
 	width: 50px;
-	height: 30px;
-	line-height: 30px;
+	height: 20px;
+	line-height: 20px;
 	margin-top: 5px;
 	display: inline-block;
 	text-align: center;
@@ -65,7 +65,7 @@
 
 .head3 .order {
 	position: absolute;
-	bottom: 20px;
+	bottom: 100px;
 	width: 100%;
 	text-align: center;
 }
@@ -619,7 +619,8 @@
 }
 
 .head9 .items .currnum {
-	background: #ff9436;
+	/*background: #ff9436;*/
+	background: url(../img/index/16.png) repeat;
 	border-radius: 100px;
 	width: 100px;
 	height: 8px;
@@ -636,4 +637,224 @@
 	position: absolute;
 	left: 0px;
 	top: -48px;
+}
+
+.head9 .items .left {
+	width: 55%;
+	margin-left: 5%;
+	display: inline-block;
+	float: left;
+}
+
+.head9 .items .left .item {
+	line-height: 33px;
+	margin-bottom: 20px;
+	width: 100%;
+	float: left;
+}
+
+.head9 .items .left .item:first-child {
+	margin-top: 50px;
+}
+
+.head9 .items .left .item .left1 {
+	width: 100px;
+	display: inline-block;
+	float: left;
+}
+
+.head9 .items .left .tip {
+	font-family: PingFangSC-Regular;
+	font-size: 14px;
+	color: #868686;
+}
+
+.head9 .items .left span {
+	float: left;
+}
+
+.head9 .items .left .city {
+	font-family: PingFangSC-Semibold;
+	font-size: 12px;
+	color: #ff9436;
+	margin-left: 10px;
+}
+
+.head9 .items .left .input {
+	background: #ffffff;
+	border: 1px solid #dadada;
+	border-radius: 3px;
+	width: 248px;
+	height: 33px;
+	float: left;
+	text-align: center;
+	outline: none;
+}
+
+.head9 .items .left .calculate {
+	position: relative;
+	display: inline-block;
+	width: 248px;
+	height: 33px;
+}
+
+.head9 .items .left .calculate .input {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+}
+
+.head9 .items .left .calculate .plus {
+	position: absolute;
+	right: 10px;
+	top: 0px;
+	font-family: PingFangSC-Regular;
+	font-size: 24px;
+	color: #4a4a4a;
+	z-index: 2;
+	cursor: pointer;
+}
+
+.head9 .items .left .calculate .reduce {
+	position: absolute;
+	left: 10px;
+	top: 0px;
+	font-family: PingFangSC-Regular;
+	font-size: 24px;
+	color: #4a4a4a;
+	z-index: 2;
+	cursor: pointer;
+}
+
+.head9 .items .right {
+	background: #ffffff;
+	border-radius: 8px;
+	width: 35%;
+	margin-right: 5%;
+	height: 220px;
+	display: inline-block;
+	float: right;
+	margin-top: 50px;
+}
+
+.head9 .items .right .cover {
+	background: #737373;
+	border-radius: 8px 8px 0px 0px;
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	font-family: PingFangSC-Regular;
+	font-size: 18px;
+	color: #ffffff;
+	float: left;
+}
+
+.head9 .items .right .item {
+	line-height: 20px;
+	width: 80%;
+	margin: 0px 30px;
+	float: left;
+	margin-top: 20px;
+}
+
+
+/******************** Bottom *********************/
+
+.bottom {
+	background: #f7f7f7;
+	width: 100%;
+	margin-top: 50px;
+	float: left;
+}
+
+.bottom .bottom1 {
+	font-family: PingFangSC-Light;
+	font-size: 14px;
+	color: #636363;
+	width: 100%;
+	line-height: 25px;
+	margin-top: 50px;
+}
+
+.bottom .bottom2 {
+	font-family: PingFangSC-Light;
+	font-size: 14px;
+	color: #636363;
+	width: 100%;
+	line-height: 25px;
+	margin-bottom: 50px;
+}
+
+.bottom .bottom3 {
+	background: #3d3d3d;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	font-family: PingFangSC-Regular;
+	font-size: 14px;
+	color: #ffffff;
+}
+
+.bottom .split {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+
+/******************** 悬浮框 *********************/
+
+.fright {
+	opacity: 0.65;
+	width: 66px;
+	position: fixed;
+	right: 20%;
+	top: 30%;
+	z-index: 99;
+}
+
+.fright .item {
+	width: 100%;
+	height: 66px;
+	float: left;
+	position: relative;
+	background: #000000;
+}
+
+.fright .item.item1 {
+	background-image: url("../img/index/17.png");
+	background-repeat: no-repeat;
+	background-position: center 10px;
+}
+
+.fright .item.item2 {
+	background-image: url("../img/index/18.png");
+	background-repeat: no-repeat;
+	background-position: center 10px;
+	background-color: #e97c1d;
+}
+
+.fright .item.item3 {
+	background-image: url("../img/index/19.png");
+	background-repeat: no-repeat;
+	background-position: center 10px;
+}
+
+.fright .item.item4 {
+	width: 100%;
+	height: 65px;
+	margin-top: 5px;
+	background-image: url("../img/index/20.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.fright .item .tip {
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+	color: #ffffff;
 }
