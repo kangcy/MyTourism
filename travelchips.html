@@ -125,6 +125,7 @@
 
 </html>
 <script type="text/javascript " src="js/jquery-1.10.2.min.js "></script>
+<script type="text/javascript " src="js/base.js"></script>
 <script type="text/javascript" src="js/msgbox/msgbox.js"></script>
 <script type="text/javascript" src="js/jquery.myPagination5.0.js"></script>
 <script type="text/javascript ">
@@ -132,14 +133,6 @@
 	var recordCount = 100;
 	var pageSize = 5;
 	$(function() {
-		if($("body").height() < window.innerHeight) {
-			$("#bottom").css({
-				"position": "fixed",
-				"bottom": "0px",
-				"left": "0px"
-			});
-		}
-
 		$("#divPager").myPagination({
 			currPage: currentIndex,
 			pageCount: Math.ceil(recordCount / pageSize),
@@ -155,15 +148,4 @@
 			}
 		});
 	});
-
-	//登录弹窗
-	function LoginTan(index) {
-		if(index == 0) {
-			$("#tanbg").addClass("hide");
-			$("#login").removeClass("bounceIn").addClass("bounceOut").addClass("hide");
-		} else {
-			$("#tanbg").removeClass("hide");
-			$("#login").removeClass("hide").removeClass("bounceOut").addClass("bounceIn");
-		}
-	}
 </script>
