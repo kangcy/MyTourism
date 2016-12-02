@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>旅游众筹</title>
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/travelchips.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="js/unslider/unslider.css" unslider="1">
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="full head1 tc fl">
+			<div class="items tr">
+				<div class="item" onclick="LoginTan(1)">登录</div>
+				<div class="item border">注册</div>
+			</div>
+		</div>
+		<div class="full head2 tc fl">
+			<div class="items f16">
+				<div class="item first"><img src="img/index/logo.png" /></div>
+				<div class="item">首页</div>
+				<div class="item">会员专享</div>
+				<div class="item">私人订制</div>
+				<div class="item">关于我们</div>
+				<div class="item">旅游众筹</div>
+				<div class="item">订购/退订</div>
+			</div>
+		</div>
+		<div class="head3 banner fl">
+			<div class="items">
+				<div class="item curr">全部</div>
+				<div class="item">进行中</div>
+				<div class="item">即将开始</div>
+				<div class="item">已完成</div>
+			</div>
+		</div>
+
+		<!--旅游众筹-->
+		<div class="full head4 fl tc">
+			<div class="items tl">
+				<div class="item2 mt20">
+					<img class="left fl" src="img/index/9.png" />
+					<div class="right fl">
+						<div class="title1">梦在心中，行在脚下——Cycling France，向最伟大的自行车运动致敬</div>
+						<div class="full tl" style="line-height: 35px;">
+							<span class="title2 fl">市场价</span><span class="price fl">¥5999</span>
+							<div class="try fr">1元试试</div>
+						</div>
+						<div class="totalnum mt15">
+							<div class="currnum"></div>
+							<div class="currpercent">35%</div>
+						</div>
+						<p><span class="title2">已支持</span><span class="already">¥1243</span><span class="title2 fr">剩余时间：34天</span></p>
+						<div class="list">
+							<div><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
+							<div><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
+							<div><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
+							<div><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--底部-->
+		<div class="bottom tc" id="bottom">
+			<p class="bottom1"><span>关于我们</span><span class="split">|</span><span>联系我们</span><span class="split">|</span><span>服务协议</span><span class="split">|</span><span>帮助中心</span></p>
+			<p class="bottom2"><span>友情链接：</span><span class="split">&nbsp;</span><span>链接1</span><span class="split">&nbsp;</span><span>链接2</span><span class="split">&nbsp;</span><span>链接3</span><span class="split">&nbsp;</span><span>链接4</span><span class="split">&nbsp;</span><span>链接5</span></p>
+			<div class="bottom3">2016旅游管家 版权所有 技术支持：创跃慧工作室</div>
+		</div>
+		<!--悬浮框-->
+		<div class="fright">
+			<div class="item item1">
+				<div class="tip">电话</div>
+			</div>
+			<div class="item item2">
+				<div class="tip">咨询</div>
+			</div>
+			<div class="item item3">
+				<div class="tip">微信</div>
+			</div>
+			<div class="item item4"></div>
+		</div>
+		<!--登录框-->
+		<div class="tanbg hide" id="tanbg"></div>
+		<div class="logincover hide" id="login">
+			<div class="login">
+				<img src="img/index/22.png" class="fr mr10 mt10" onclick="LoginTan(0)">
+				<img src="img/index/21.jpg" class="full">
+				<input type="text" class="input" placeholder="手机号" />
+				<input type="text" class="input" placeholder="密码" />
+				<div class="btnLogin">立即登录</div>
+				<div class="action"><span class="forget fl">忘记密码</span><span class="register fr">还没有账号？<span style="color:#f5a623;">快速注册</span></span>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript " src="js/jquery-1.10.2.min.js "></script>
+<script type="text/javascript ">
+	$(function() {
+		if($("body").height() < window.innerHeight) {
+			$("#bottom").css({
+				"position": "fixed",
+				"bottom": "0px",
+				"left": "0px"
+			});
+		}
+	});
+
+	//登录弹窗
+	function LoginTan(index) {
+		if(index == 0) {
+			$("#tanbg").addClass("hide");
+			$("#login").removeClass("bounceIn").addClass("bounceOut").addClass("hide");
+		} else {
+			$("#tanbg").removeClass("hide");
+			$("#login").removeClass("hide").removeClass("bounceOut").addClass("bounceIn");
+		}
+	}
+</script>
