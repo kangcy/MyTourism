@@ -75,6 +75,7 @@
 	font-family: .PingFangSC-Regular;
 	font-size: 14px;
 	color: #4a4a4a;
+	margin-bottom: 50px;
 }
 
 .head4 .items .item span {
@@ -115,6 +116,7 @@
 	display: inline-block;
 	font-size: 14px;
 	color: #ffffff;
+	cursor: pointer;
 }
 
 .head4 .items .item .next {
@@ -125,6 +127,7 @@
 	display: inline-block;
 	font-size: 14px;
 	color: #ffffff;
+	cursor: pointer;
 }
 
 

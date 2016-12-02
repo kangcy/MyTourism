@@ -38,9 +38,10 @@
 		<div class="full head4 tc fl">
 			<div class="items mt30">
 				<div class="title">立即订制</div>
-				<div class="desc ">
-					<p class="need tl mb20">带<span style="color:#ff001f;">*</span>号为必填项～</p>
-					<div class="step1 hide">
+				<div class="desc" id="step">
+					<p class="need tl">带<span style="color:#ff001f;">*</span>号为必填项～</p>
+					<!--步骤1-->
+					<div class="step1">
 						<div class="item">
 							<div class="left1"><span class="tip fr mr10"><span style="color:#ff001f;margin-right:5px;margin-top: 3px;">*</span>目的地</span>
 							</div><input type="text" class="input" /><span class="tip ml10">热门推荐：</span><span class="city">长城</span><span class="city">大理</span><span class="city">张家界</span><span class="city">敦煌</span></div>
@@ -54,11 +55,12 @@
 							</div>
 							<input type="text" class="input Wdate" id="time" onclick="WdatePicker({ el: $dp.$('time'), dateFmt: 'yyyy-MM-dd' })" /><input type="number" class="input ml10" style="width:50px" /><span class="fl ml10">天</span>
 						</div>
-						<div class="item">
-							<div class="next fl" style="margin-left: 100px;">下一步</div>
+						<div class="item mt20">
+							<div class="next fl" style="margin-left: 100px;" onclick="Step(2)">下一步</div>
 						</div>
 					</div>
-					<div class="step2">
+					<!--步骤2-->
+					<div class="step2 hide">
 						<div class="item">
 							<div class="left1"><span class="tip fr mr10">酒店星级</span></div><input type="text" class="input" /></div>
 						<div class="item">
@@ -66,11 +68,25 @@
 						<div class="item">
 							<div class="left1"><span class="tip fr mr10">备注留言</span>
 							</div>
-							<textarea class="remark"></textarea>
+							<textarea class="remark" maxlength="150"></textarea>
 						</div>
+						<div class="item mt20">
+							<div class="prev fl" style="margin-left: 100px;" onclick="Step(1)">上一步</div>
+							<div class="next fl ml15" onclick="Step(3)">下一步</div>
+						</div>
+					</div>
+					<!--步骤3-->
+					<div class="step3 hide">
 						<div class="item">
-							<div class="prev fl" style="margin-left: 100px;">上一步</div>
-							<div class="next fl ml15">下一步</div>
+							<div class="left1"><span class="tip fr mr10">您的姓名</span> </div><input type="text" class="input" /></div>
+						<div class="item">
+							<div class="left1"><span class="tip fr mr10"><span style="color:#ff001f;margin-right:5px;margin-top: 3px;">*</span>手机号码</span>
+							</div>
+							<input type="phone" class="input" maxlength="11" />
+						</div>
+						<div class="item mt20">
+							<div class="prev fl" style="margin-left: 100px;" onclick="Step(2)">上一步</div>
+							<div class="next fl ml15">提交</div>
 						</div>
 					</div>
 				</div>
@@ -139,4 +155,25 @@
 	$(function() {
 
 	});
+	
+	
+	
+//定制流程
+function Step(index) {
+	//流程1
+	if(index == 1) {
+		$("#step").find(".step2,.step3").addClass("hide");
+		$("#step").find(".step1").removeClass("hide");
+	}
+	//流程2
+	else if(index == 2) {
+		$("#step").find(".step1,.step3").addClass("hide");
+		$("#step").find(".step2").removeClass("hide");
+	}
+	//流程3
+	else if(index == 3) {
+		$("#step").find(".step1,.step2").addClass("hide");
+		$("#step").find(".step3").removeClass("hide");
+	}
+}
 </script>
