@@ -135,3 +135,84 @@
 .head4 .items .item .right .content .action span {
 	float: left;
 }
+
+
+/******************** Head5 *********************/
+
+.head5 {
+	background: #f7f7f7;
+}
+
+.head5 .items {
+	width: 1100px;
+	display: inline-block;
+	margin-bottom: 50px;
+}
+
+.head5 .items .title {
+	font-size: 24px;
+	color: #e97c1d;
+	line-height: 50px;
+}
+
+.head5 .items .title .subtitle {
+	font-family: PingFangSC-Regular;
+	font-size: 14px;
+	color: #4a4a4a;
+	margin-left: 5px;
+}
+
+.head5 .items .border {
+	height: 1px;
+	width: 100%;
+	background: #d1d1d1;
+}
+
+.head5 .items .border img {
+	width: 95px;
+	height: 1px;
+	float: left;
+}
+
+.head5 .items .item {
+	width: 90%;
+	float: left;
+	padding: 5%;
+	background: #fff;
+}
+
+.head5 .items .item .left {
+	width: 25%;
+	float: left;
+	display: inline-block;
+	text-align: center;
+}
+
+.head5 .items .item .left img {
+	background: #d8d8d8;
+	width: 153px;
+	height: 153px;
+	border-radius: 100%;
+}
+
+.head5 .items .item .right {
+	width: 75%;
+	float: left;
+	display: inline-block;
+}
+
+.head5 .items .item .right .name {
+	font-family: .PingFangSC-Semibold;
+	font-size: 18px;
+	color: #000000;
+	text-align: left;
+}
+
+.head5 .items .item .right .name span {
+	color: #e97c1d;
+	margin-left: 20px;
+}
+
+.head5 .items .item .right span {
+	line-height: 20px;
+}
