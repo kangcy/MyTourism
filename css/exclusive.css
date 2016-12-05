@@ -1,4 +1,8 @@
-/******************** Head4 *********************/
+/******************** Head3 *********************/
+
+.head3 {
+	background: #f7f7f7;
+}
 
 .head3 .items {
 	width: 1100px;
@@ -9,6 +13,19 @@
 	font-size: 24px;
 	color: #e97c1d;
 	line-height: 50px;
+}
+
+.head3 .items .title .subtitle {
+	font-family: PingFangSC-Regular;
+	font-size: 14px;
+	color: #4a4a4a;
+}
+
+.head3 .items .title .more {
+	font-family: PingFangSC-Regular;
+	font-size: 12px;
+	color: #9b9b9b;
+	float: right;
 }
 
 .head3 .items .border {
@@ -23,143 +40,214 @@
 	float: left;
 }
 
-.head3 .item {
-	height: 300px;
+.head3 .items .item {
 	width: 100%;
+	height: 345px;
 	background: #ffffff;
-	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.50);
 	float: left;
 	margin-top: 30px;
 }
 
-.head3 .item .left {
+.head3 .items .item .left {
 	width: 48%;
 	height: 100%;
 	display: inline-block;
 }
 
-.head3 .item .right {
+.head3 .items .item .right {
 	width: 52%;
 	height: 100%;
 	display: inline-block;
 	position: relative;
 }
 
-.head3 .item .right .icon {
+.head3 .items .item .right .icon {
 	left: 0px;
 	top: 0px;
 	position: absolute;
 }
 
-.head3 .item .right .content {
-	margin: 35px;
+.head3 .items .item .right .content {
+	margin: 25px 35px;
+	display: inline-block;
 }
 
-.head3 .item .right .content .title1 {
+.head3 .items .item .right .content .title1 {
 	font-family: PingFangSC-Semibold;
 	font-size: 18px;
 	color: #4f4f4f;
 	line-height: 25px;
 }
 
-.head3 .item .right .content .price {
+.head3 .items .item .right .content .price {
 	background: #f0f0f0;
-	width: 100%;
-	height: 86px;
+	width: 90%;
+	padding: 1% 5%;
 	font-family: PingFangSC-Regular;
 	font-size: 12px;
 	color: #6d6d6d;
+	margin-top: 10px;
 }
 
-.head3 .item .right .title2 {
-	font-family: PingFangSC-Regular;
+.head3 .items .item .right .content .price .money {
 	font-size: 14px;
-	color: #999999;
-	text-align: left;
-}
-
-.head3 .item .right .price {
-	font-family: PingFangSC-Regular;
-	font-size: 20px;
 	color: #ff001f;
-	text-align: left;
 	margin-left: 15px;
 }
 
-.head3 .item .right .try {
-	background: #ff9436;
+.head3 .items .item .right .content .price .currmoney {
+	font-size: 30px;
+	color: #ff001f;
+	margin-left: 5px;
+}
+
+.head3 .items .item .right .content .price .score {
+	font-family: PingFangSC-Regular;
+	font-size: 14px;
+	color: #ff001f;
+	margin-left: 10px;
+}
+
+.head3 .items .item .right .content .btn {
+	background: #e97c1d;
 	border-radius: 3px;
 	width: 120px;
 	height: 35px;
 	line-height: 35px;
-	text-align: center;
 	display: inline-block;
 	font-family: PingFangSC-Semibold;
 	font-size: 14px;
 	color: #ffffff;
+	text-align: center;
 }
 
-.head3 .item .right .totalnum {
-	background: #ececec;
-	border-radius: 100px;
-	width: 100%;
-	height: 8px;
-	position: relative;
+.head3 .items .item .right .content .input {
+	border: 1px solid #dadada;
+	border-radius: 3px;
+	width: 50px;
+	height: 33px;
+	float: left;
+	text-align: center;
+	outline: none;
+}
+
+.head3 .items .item .right .content .action {
+	line-height: 15px;
+	float: left;
+	margin-top: 15px;
+}
+
+.head3 .items .item .right .content .action img,
+.head3 .items .item .right .content .action span {
+	float: left;
+}
+
+.head3 .items .item .right .content .countdown {
+	line-height: 35px;
+	margin-top: 15px;
+}
+
+.head3 .items .item .right .content .countdown img,
+.head3 .items .item .right .content .countdown span {
+	float: left;
+}
+
+
+/******************** Head4 *********************/
+
+.head4 {
+	background: #f7f7f7;
+}
+
+.head4 .items {
+	width: 1100px;
 	display: inline-block;
 }
 
-.head3 .item .right .currnum {
-	background: #ff9436;
-	border-radius: 100px;
-	width: 100px;
-	height: 8px;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	display: inline-block;
-}
-
-.head3 .item .right .currpercent {
-	font-family: PingFangSC-Regular;
-	font-size: 12px;
-	color: #4f4f4f;
-	position: absolute;
-	left: 0px;
-	top: -20px;
-}
-
-.head3 .item .right .already {
-	font-family: PingFangSC-Regular;
-	font-size: 12px;
+.head4 .items .title {
+	font-size: 24px;
 	color: #e97c1d;
+	line-height: 50px;
+}
+
+.head4 .items .title .subtitle {
+	font-family: PingFangSC-Regular;
+	font-size: 14px;
+	color: #4a4a4a;
+}
+
+.head4 .items .title .more {
+	font-family: PingFangSC-Regular;
+	font-size: 12px;
+	color: #9b9b9b;
+	float: right;
+}
+
+.head4 .items .border {
+	height: 1px;
+	width: 100%;
+	background: #d1d1d1;
+}
+
+.head4 .items .border img {
+	width: 95px;
+	height: 1px;
+	float: left;
+}
+
+.head4 .items .item {
+	width: 33%;
+	background: #ffffff;
+	float: left;
+	margin-top: 30px;
+}
+
+.head4 .items .item img {
+	width: 100%;
+	height: 310px;
+}
+
+.head4 .items .item .content {
+	width: 94%;
+	margin: 5% 3%;
+	display: inline-block;
+	color: #9b9b9b;
+	font-family: .PingFangSC-Regular;
+	font-size: 14px;
+}
+
+.head4 .items .item .content .name {
+	font-family: .PingFangSC-Regular;
+	font-size: 18px;
+	color: #000000;
+}
+
+.head4 .items .item .content .left {
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+	font-family: .PingFangSC-Regular;
+	font-size: 14px;
+	line-height: 20px;
+	float: left;
+}
+
+.head4 .items .item .content .right {
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+	line-height: 40px;
+	float: left;
+}
+
+.head4 .items .item .content .money {
+	font-size: 14px;
+	color: #ff001f;
 	margin-left: 15px;
 }
 
-.head3 .item .right .list {
-	border: 1px solid #ebebeb;
-	border-radius: 3px;
-	width: 100%;
-	height: 80px;
-	overflow-x: hidden;
-	overflow-y: auto;
-}
-
-.head3 .item .right .list div {
-	padding: 3px 10px;
-	width: 100%;
-}
-
-.head3 .item .right .list span:first-child {
-	font-family: PingFangSC-Regular;
-	font-size: 12px;
-	color: #979797;
-	text-align: left;
-}
-
-.head3 .item .right .list span:last-child {
-	font-family: PingFangSC-Regular;
-	font-size: 12px;
-	color: #4a4a4a;
-	text-align: left;
-	margin-left: 30px;
+.head4 .items .item .content .currmoney {
+	font-size: 30px;
+	color: #ff001f;
+	margin-left: 5px;
 }

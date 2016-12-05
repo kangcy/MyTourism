@@ -8,8 +8,6 @@
 		<link rel="stylesheet" href="css/common.css">
 		<link rel="stylesheet" href="css/exclusive.css">
 		<link rel="stylesheet" href="css/animate.css">
-		<link rel="stylesheet" href="js/msgbox/Page.css" />
-		<link rel="stylesheet" href="js/msgbox/msgbox.css" />
 	</head>
 
 	<body>
@@ -31,10 +29,10 @@
 				<div class="item">订购/退订</div>
 			</div>
 		</div>
-		<!--旅游众筹-->
+		<!--限时秒杀-->
 		<div class="full head3 fl tc">
 			<div class="items tl">
-				<div class="title">限时秒杀</div>
+				<div class="title">限时秒杀<span class="subtitle">Limit spike</span><span class="more">更多</span></div>
 				<div class="border" style=""><img src="img/travelchip/8.png" /></div>
 				<div class="item">
 					<img class="left fl" src="img/exclusive/2.png" />
@@ -43,21 +41,42 @@
 						<div class="content">
 							<div class="title1">南京飞往九寨沟3日游</div>
 							<div class="price">
-								<p>原价<span>¥298</span></p>
-								<p>现价<span>¥298</span><span class="fr">如何获取积分？</span><span class="fr">查看积分</span></p>
+								<p class="full">原价<span class="ml15 f16" style="color:#4a4a4a;">¥298</span></p>
+								<p class="full">现价<span class="money">¥</span><span class="currmoney">298</span><span class="score">+200积分</span><span class="fr">如何获取积分？</span><span class="fr mr30">查看积分</span></p>
 							</div>
-							<div class="full tl">
-								<span class="title2 fl">数量</span><span class="price fl">1</span>
-								<div class="try fr">已有<span>0</span>人参与</div>
+							<div class="full tl mt15">
+								<span class="title2 fl">数量</span><span class="ml15 f16" style="color:#4a4a4a;">1</span>
+								<span class="ml15">已有<span style="color: #ff001f;">0</span>人参与</span>
 							</div>
-							<div><span>出游日期</span><input type="text" class="input Wdate" id="time" onclick="WdatePicker({ el: $dp.$('time'), dateFmt: 'yyyy-MM-dd' })" /><span class="fl ml10">出游人数</span><input type="number" class="input ml10" style="width:50px" /><span>人</span></div>
-							<div><div class="btn">活动提醒</div><span>活动倒计时</span></div>
+							<div class="full fl mt15" style="line-height:38px;"><span class="fl">出游日期</span><input type="text" class="input Wdate ml10" id="time" onclick="WdatePicker({ el: $dp.$('time'), dateFmt: 'yyyy-MM-dd' })" style="width:160px" /><span class="fl ml10">出游人数</span><input type="number" class="input ml10" /><span class="fl ml5">人</span></div>
+							<div class="full fl countdown">
+								<div class="btn fl">活动提醒</div><img src="img/exclusive/6.png" class="mt10 ml15" /><span class="ml5">活动倒计时：</span><span class="ml10 f16" style="color:#4a4a4a;">01天12时20分24秒</span></div>
+							<div class="action full"><img src="img/exclusive/3.png" /><span class="ml5">通知好友</span><img src="img/exclusive/4.png" class="ml20" /><span class="ml5">收藏</span><img src="img/exclusive/5.png" class="ml20" /><span class="ml5">分享</span></div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div id="divPager" align="center" style="margin-top:50px;float: left;width: 100%;"></div>
+		<!--会员特卖-->
+		<div class="full head4 fl tc">
+			<div class="items tl">
+				<div class="title">会员特卖<span class="subtitle">Limit spike</span><span class="more">更多</span></div>
+				<div class="border" style=""><img src="img/travelchip/8.png" /></div>
+				<div class="item">
+					<img src="img/exclusive/7.png" class="fl" />
+					<div class="content fl">
+						<div class="name mb20">北京往返香港4或5天韩机票</div>
+						<div class="left">
+							<div class="full">特卖时间</div>
+							<div class="full c4a4a4a">2016.11.10-2017.01.10</div>
+						</div>
+						<div class="right tr">
+							<span style="text-decoration: line-through;">2800元</span><span class="money">¥</span><span class="currmoney">1500</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!--底部-->
 		<div class="bottom tc" id="bottom">
@@ -83,26 +102,9 @@
 </html>
 <script type="text/javascript " src="js/jquery-1.10.2.min.js "></script>
 <script type="text/javascript " src="js/base.js"></script>
-<script type="text/javascript" src="js/msgbox/msgbox.js"></script>
-<script type="text/javascript" src="js/jquery.myPagination5.0.js"></script>
+<script type="text/javascript" src="js/datePicker/WdatePicker.js"></script>
 <script type="text/javascript ">
-	var currentIndex = 1;
-	var recordCount = 100;
-	var pageSize = 5;
 	$(function() {
-		$("#divPager").myPagination({
-			currPage: currentIndex,
-			pageCount: Math.ceil(recordCount / pageSize),
-			pageSize: pageSize,
-			links: 'javascript:void(0);',
-			cssStyle: 'jogger',
-			ajax: {
-				on: false,
-				onClick: function(page) {
-					ZENG.msgbox.show(" 正在加载" + page + "页，请稍后...", 6, 1000);
-					window.location.href = "/travelchips.html?page=" + page;
-				}
-			}
-		});
+
 	});
 </script>

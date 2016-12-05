@@ -100,6 +100,10 @@ body {
 	color: #ff6900 !important;
 }
 
+.c4a4a4a {
+	color: #4a4a4a !important;
+}
+
 .f13 {
 	font-size: 13px !important;
 }
@@ -162,6 +166,10 @@ body {
 
 .ml10 {
 	margin-left: 10px !important;
+}
+
+.ml20 {
+	margin-left: 20px !important;
 }
 
 .ml15 {
