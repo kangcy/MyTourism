@@ -172,14 +172,49 @@
 			</div>
 			<div class="item item4"></div>
 		</div>
+
+		<!--活动提醒弹窗-->
+		<div class="tanbg" id="tanbg"></div>
+		<div class="remindcover" id="remind">
+			<div class="add hide">
+				<img src="img/exclusive/12.png" class="cover" />
+				<img src="img/common/2.png" class="close" onclick="LoginTan(0)">
+				<div class="content">
+					<div class="full tl">
+						<div class="name">内容：</div><input type="text" class="input" value="asda阿萨德发" /></div>
+					<div class="full tl">
+						<div class="name">活动时间：</div><span class="f18 cfff">2016-11-11 10:00:00</span></div>
+					<div class="full tl">
+						<div class="name fl">提醒时间：</div>
+						<select>
+							<option data-display="Select" value="0">提前5分钟</option>
+							<option value="1">提前10分钟</option>
+							<option value="2">提前15分钟</option>
+							<option value="4">提前20分钟</option>
+						</select>
+					</div>
+					<div class="btn">添加提醒</div>
+				</div>
+			</div>
+			<div class="success">
+				<img src="img/exclusive/12.png" class="cover" />
+				<img src="img/common/2.png" class="close" onclick="LoginTan(0)">
+				<div class="content">
+					<div>
+						<img src="img/exclusive/13.png" class="fl"><span class="ml10 fl">您已成功添加提醒</span>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 
 </html>
 <script type="text/javascript " src="js/jquery-1.10.2.min.js "></script>
 <script type="text/javascript " src="js/base.js"></script>
 <script type="text/javascript" src="js/datePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
 <script type="text/javascript ">
 	$(function() {
-
+		$('select:not(.ignore)').niceSelect();
 	});
 </script>
