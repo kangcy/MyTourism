@@ -152,6 +152,10 @@ body {
 	padding: 5px !important;
 }
 
+.ml0 {
+	margin-left: 0px !important;
+}
+
 .ml5 {
 	margin-left: 15px !important;
 }
@@ -163,9 +167,11 @@ body {
 .ml15 {
 	margin-left: 15px !important;
 }
+
 .ml50 {
 	margin-left: 50px !important;
 }
+
 .mr10 {
 	margin-right: 10px !important;
 }
