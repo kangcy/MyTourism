@@ -51,7 +51,7 @@
 						<div class="choose full fl tl mt30"><span>份额选择</span><span class="ml50 f20">-</span><input type="number" class="input ml15" /><span class="ml15 f20">+</span><span class="money ml50">¥</span><span class="currmoney ml5">8</span></div>
 						<p class="info full fl tl mt15">每增加一份，您的中奖概率将加大哦</p>
 						<p class="info full fl tl">您已阅读并同意《旅游管家服务使用协议》</p>
-						<div class="btn">我要参加</div>
+						<div class="btn" onclick="JoinTan(1)">我要参加</div>
 					</div>
 				</div>
 			</div>
@@ -125,6 +125,42 @@
 				<div class="tip">微信</div>
 			</div>
 			<div class="item item4"></div>
+		</div>
+
+		<!--参加众筹弹框-->
+		<div class="tanbg hide" id="tanbg"></div>
+		<div class="joincover hide" id="join">
+			<div class="add hide">
+				<div class="border1"></div>
+				<div class="border2"></div>
+				<div class="border3"></div>
+				<div class="border4"></div>
+				<img src="img/common/2.png" class="close" onclick="JoinTan(0)">
+				<div class="content">
+					<div class="full tl">
+						<div class="name">您的手机号：</div><input type="text" class="input" maxlength="11" />
+						<p class="cfff mt0 mb0 f12" style="text-indent:160px;">手机号仅用于通知获奖情况</p>
+					</div>
+					<div class="full tl">
+						<div class="name">支付费用：</div><span class="f18" style="color:#e97c1d;">¥8</span></div>
+					<div class="btn" onclick="JoinTan(2)">确认参与</div>
+					<span class="desc">该费用将从您的宽带费中扣除</span>
+				</div>
+			</div>
+			<div class="success hide">
+				<div class="border1"></div>
+				<div class="border2"></div>
+				<div class="border3"></div>
+				<div class="border4"></div>
+				<img src="img/common/2.png" class="close" onclick="JoinTan(0)">
+				<div class="content">
+					<div>
+						<div class="title1">您已成功参与旅游众筹</div>
+						<div class="title2">您的宽带账号为:<span class="ml15" style="color:#e97c1d;">b07824738</span></div>
+						<div class="title2">此号码将作为您的中奖凭证</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 

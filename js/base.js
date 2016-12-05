@@ -62,3 +62,25 @@ function LoginTan(index) {
 	$("#tanbg").removeClass("hide");
 	$("#login").removeClass("hide").removeClass("bounceOut").addClass("bounceIn");
 }
+
+//参与众筹弹窗
+function JoinTan(index) {
+	//关闭弹窗
+	if(index <= 0) {
+		$("#tanbg").addClass("hide");
+		$("#join").removeClass("bounceIn").addClass("bounceOut").addClass("hide");
+		return;
+	}
+	//我要参加
+	else if(index == 1) {
+		$("#join").find(".success").addClass("hide");
+		$("#join").find(".add").removeClass("hide");
+	}
+	//参加成功
+	else if(index == 2) {
+		$("#join").find(".add").addClass("hide");
+		$("#join").find(".success").removeClass("hide");
+	}
+	$("#tanbg").removeClass("hide");
+	$("#join").removeClass("hide").removeClass("bounceOut").addClass("bounceIn");
+}

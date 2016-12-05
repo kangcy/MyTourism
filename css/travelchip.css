@@ -209,6 +209,197 @@
 }
 
 
+/******************** 参加众筹提示框 *********************/
+
+.joincover {
+	position: fixed;
+	left: 0px;
+	top: 30%;
+	width: 100%;
+	z-index: 1000;
+	text-align: center;
+}
+
+.joincover .add {
+	background: rgba(0, 0, 0, 0.74);
+	border-radius: 8px;
+	width: 650px;
+	height: 370px;
+	display: inline-block;
+	position: relative;
+	color: #fff;
+}
+
+.joincover .add .border1 {
+	position: absolute;
+	left: 50px;
+	top: 50px;
+	width: 550px;
+	height: 1px;
+	background: url(../img/exclusive/14.png) repeat;
+}
+
+.joincover .add .border2 {
+	position: absolute;
+	left: 50px;
+	top: 50px;
+	height: 270px;
+	width: 1px;
+	background: url(../img/exclusive/15.png) repeat;
+}
+
+.joincover .add .border3 {
+	position: absolute;
+	left: 50px;
+	bottom: 50px;
+	width: 550px;
+	height: 1px;
+	background: url(../img/exclusive/14.png) repeat;
+}
+
+.joincover .add .border4 {
+	position: absolute;
+	right: 50px;
+	top: 50px;
+	height: 270px;
+	width: 1px;
+	background: url(../img/exclusive/15.png) repeat;
+}
+
+.joincover .add .content {
+	width: 450px;
+	height: 170px;
+	position: absolute;
+	left: 100px;
+	top: 100px;
+}
+
+.joincover .add .content .full {
+	line-height: 37px;
+	float: left;
+}
+
+.joincover .add .content .name {
+	width: 90px;
+	display: inline-block;
+	color: #fff;
+	font-size: 14px;
+	text-align: right;
+	margin-right: 10px;
+	margin-left: 60px;
+}
+
+.joincover .add .content .input {
+	background: #ffffff;
+	border: 1px solid #dadada;
+	border-radius: 3px;
+	width: 200px;
+	height: 33px;
+	font-size: 16px;
+	text-indent: 15px;
+	outline: none;
+}
+
+.joincover .add .content .btn {
+	background: #e97c1d;
+	border-radius: 3px;
+	width: 120px;
+	height: 35px;
+	line-height: 35px;
+	display: inline-block;
+	font-family: PingFangSC-Semibold;
+	font-size: 14px;
+	color: #ffffff;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.joincover .add .content .desc {
+	position: absolute;
+	right: -25px;
+	bottom: -25px;
+	font-size: 12px;
+}
+
+.joincover .close {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+}
+
+.joincover .success {
+	background: rgba(0, 0, 0, 0.74);
+	border-radius: 8px;
+	width: 650px;
+	height: 370px;
+	display: inline-block;
+	position: relative;
+	color: #fff;
+}
+
+.joincover .success .border1 {
+	position: absolute;
+	left: 50px;
+	top: 50px;
+	width: 550px;
+	height: 1px;
+	background: url(../img/exclusive/14.png) repeat;
+}
+
+.joincover .success .border2 {
+	position: absolute;
+	left: 50px;
+	top: 50px;
+	height: 270px;
+	width: 1px;
+	background: url(../img/exclusive/15.png) repeat;
+}
+
+.joincover .success .border3 {
+	position: absolute;
+	left: 50px;
+	bottom: 50px;
+	width: 550px;
+	height: 1px;
+	background: url(../img/exclusive/14.png) repeat;
+}
+
+.joincover .success .border4 {
+	position: absolute;
+	right: 50px;
+	top: 50px;
+	height: 270px;
+	width: 1px;
+	background: url(../img/exclusive/15.png) repeat;
+}
+
+.joincover .success .content {
+	width: 450px;
+	height: 170px;
+	position: absolute;
+	left: 100px;
+	top: 100px;
+}
+
+.joincover .success .content div {
+	display: inline-block;
+	color: #ffffff;
+}
+
+.joincover .success .content .title1 {
+	font-family: MLingWaiMedium-TC;
+	font-size: 36px;
+	line-height: 80px;
+}
+
+.joincover .success .content .title2 {
+	font-family: .PingFangSC-Regular;
+	font-size: 18px;
+	line-height: 40px;
+}
+
+
 /*照片墙*/
 
 .head5 .item .right2 {

@@ -48,7 +48,13 @@
 						<div class="item">
 							<div class="left1"><span class="tip fr mr10"><span style="color:#ff001f;margin-right:5px;margin-top: 3px;">*</span>人均预算</span>
 							</div>
-							<input type="text" class="input" />
+							<!--<input type="text" class="input" />-->
+							<select>
+								<option value="0">1000</option>
+								<option value="1">2000</option>
+								<option value="2">5000</option>
+								<option value="4">10000</option>
+							</select>
 						</div>
 						<div class="item">
 							<div class="left1"><span class="tip fr mr10">出发时间</span>
@@ -157,12 +163,10 @@
 <script type="text/javascript " src="js/jquery-1.10.2.min.js "></script>
 <script type="text/javascript " src="js/base.js"></script>
 <script type="text/javascript" src="js/datePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
 <script type="text/javascript ">
-	var currentIndex = 1;
-	var recordCount = 100;
-	var pageSize = 5;
 	$(function() {
-
+		$('select:not(.ignore)').niceSelect();
 	});
 
 	//定制流程
