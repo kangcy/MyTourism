@@ -50,7 +50,7 @@
 							<div class="price fl mt20">
 								<p class="full">原价<span class="ml15 f16 c4a4a4a linethrough">¥298</span><span class="ml20">折扣</span><span class="f16 ml5" style="color:#e97c1d;">5折</span></p>
 								<p class="full">现价<span class="money">¥</span><span class="currmoney">298</span></p>
-								<div class="btn">立即抢购</div>
+								<div class="btn" onclick="PanicTan(1)">立即抢购</div>
 							</div>
 							<div class="action full"><img src="img/exclusive/3.png" /><span class="ml5">通知好友</span><img src="img/exclusive/4.png" class="ml20" /><span class="ml5">收藏</span><img src="img/exclusive/5.png" class="ml20" /><span class="ml5">分享</span></div>
 						</div>
@@ -113,6 +113,42 @@
 			</div>
 			<div class="item item4"></div>
 		</div>
+
+		<!--立即抢购-->
+		<div class="tanbg" id="tanbg"></div>
+		<div class="paniccover" id="panic">
+			<div class="add hide">
+				<div class="border1"></div>
+				<div class="border2"></div>
+				<div class="border3"></div>
+				<div class="border4"></div>
+				<img src="img/common/2.png" class="close" onclick="PanicTan(0)">
+				<div class="content">
+					<div class="left">
+						<img src="img/productdetail/5.png" class="img1" />
+						<img src="img/productdetail/6.png" class="img2" />
+						<div class="name">蔚蓝惠享浪漫济州一地3晚4日跟团游 蔚蓝惠享浪漫济州一地3晚4日跟团游</div>
+					</div>
+					<div class="right">
+						<p class="full tl mt40">预订人信息：</p>
+						<div class="full tl mt30">手机<input type="number" class="input ml15" maxlength="11" /></div>
+						<div class="info">您已阅读并同意《旅游管家服务使用协议》</div>
+						<div class="btn" onclick="PanicTan(2)">提交订单</div>
+					</div>
+				</div>
+			</div>
+			<div class="success">
+				<div class="border1"></div>
+				<div class="border2"></div>
+				<div class="border3"></div>
+				<div class="border4"></div>
+				<img src="img/common/2.png" class="close" onclick="PanicTan(0)">
+				<div class="content">
+					<div class="full title mt30">感谢您选择旅游管家出行</div>
+					<div class="subtitle">我们的管家将尽快与您联系，请保持电话畅通</div>
+				</div>
+			</div>
+		</div>
 	</body>
 
 </html>
@@ -123,4 +159,25 @@
 	$(function() {
 
 	});
+
+	//抢购弹窗
+	function PanicTan(index) { //关闭弹窗
+		if(index <= 0) {
+			$("#tanbg").addClass("hide");
+			$("#panic").removeClass("bounceIn").addClass("bounceOut").addClass("hide");
+			return;
+		}
+		//立即抢购
+		else if(index == 1) {
+			$("#panic").find(".success").addClass("hide");
+			$("#panic").find(".add").removeClass("hide");
+		}
+		//提交订单
+		else if(index == 2) {
+			$("#panic").find(".add").addClass("hide");
+			$("#panic").find(".success").removeClass("hide");
+		}
+		$("#tanbg").removeClass("hide");
+		$("#panic").removeClass("hide").removeClass("bounceOut").addClass("bounceIn");
+	}
 </script>
