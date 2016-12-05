@@ -1,0 +1,137 @@
+/******************** Head3 *********************/
+
+.head3 {
+	background: #f7f7f7;
+}
+
+.head3 .items {
+	width: 1100px;
+	display: inline-block;
+}
+
+.head3 .items .item {
+	height: 50px;
+	line-height: 50px;
+	display: inline-block;
+	font-family: PingFangSC-Regular;
+	font-size: 14px;
+	color: #000;
+	float: left;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.head3 .items .item:last-child {
+	color: #9b9b9b;
+}
+
+
+/******************** Head4 *********************/
+
+.head4 {
+	background: #f7f7f7;
+}
+
+.head4 .items {
+	width: 1100px;
+	display: inline-block;
+}
+
+.head4 .items .item {
+	width: 100%;
+	height: 345px;
+	background: #ffffff;
+	float: left;
+}
+
+.head4 .items .item .left {
+	width: 48%;
+	height: 100%;
+	display: inline-block;
+}
+
+.head4 .items .item .right {
+	width: 52%;
+	height: 100%;
+	display: inline-block;
+	position: relative;
+}
+
+.head4 .items .item .right .icon {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+}
+
+.head4 .items .item .right .content {
+	width: 90%;
+	margin: 5%;
+	display: inline-block;
+}
+
+.head4 .items .item .right .content .name {
+	font-family: PingFangSC-Semibold;
+	font-size: 18px;
+	color: #4f4f4f;
+	line-height: 25px;
+}
+
+.head4 .items .item .right .content .price {
+	background: #f0f0f0;
+	width: 90%;
+	padding: 1% 5%;
+	font-family: PingFangSC-Regular;
+	font-size: 12px;
+	color: #6d6d6d;
+	margin-top: 10px;
+	position: relative;
+}
+
+.head4 .items .item .right .content .price .money {
+	font-size: 14px;
+	color: #ff001f;
+	margin-left: 15px;
+}
+
+.head4 .items .item .right .content .price .currmoney {
+	font-size: 30px;
+	color: #ff001f;
+	margin-left: 5px;
+}
+
+.head4 .items .item .right .content .price .btn {
+	background: #e97c1d;
+	border-radius: 3px;
+	width: 120px;
+	height: 35px;
+	line-height: 35px;
+	display: inline-block;
+	font-family: PingFangSC-Semibold;
+	font-size: 14px;
+	color: #ffffff;
+	text-align: center;
+	position: absolute;
+	right: 30px;
+	top: 30px;
+}
+
+.head4 .items .item .right .content .input {
+	border: 1px solid #dadada;
+	border-radius: 3px;
+	width: 50px;
+	height: 33px;
+	float: left;
+	text-align: center;
+	outline: none;
+}
+
+.head4 .items .item .right .content .action {
+	line-height: 15px;
+	float: left;
+	margin-top: 30px;
+}
+
+.head4 .items .item .right .content .action img,
+.head4 .items .item .right .content .action span {
+	float: left;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/productdetail.css">
+		<link rel="stylesheet" href="css/animate.css">
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="full head1 tc fl">
+			<div class="items tr">
+				<div class="item" onclick="LoginTan(1)">登录</div>
+				<div class="item border" onclick="LoginTan(2)">注册</div>
+			</div>
+		</div>
+		<div class="full head2 tc fl">
+			<div class="items f16">
+				<div class="item first"><img src="img/index/logo.png" /></div>
+				<div class="item">首页</div>
+				<div class="item">会员专享</div>
+				<div class="item">私人订制</div>
+				<div class="item">关于我们</div>
+				<div class="item">旅游众筹</div>
+				<div class="item">订购/退订</div>
+			</div>
+		</div>
+		<div class="full head3 tc fl">
+			<div class="items">
+				<div class="item">会员专享</div>
+				<div class="item"><img src="img/travelchip/6.png" /></div>
+				<div class="item">蔚蓝惠享浪漫济州一地3晚4日跟团游</div>
+			</div>
+		</div>
+		<!--限时秒杀-->
+		<div class="full head4 fl tc">
+			<div class="items tl">
+				<div class="item">
+					<img class="left fl" src="img/exclusive/2.png" />
+					<div class="right fl">
+						<div class="content">
+							<div class="name">南京飞往九寨沟3日游</div>
+							<div class="full fl mt30" style="line-height:38px;"><span class="fl">出游日期</span><input type="text" class="input Wdate ml10" id="time" onclick="WdatePicker({ el: $dp.$('time'), dateFmt: 'yyyy-MM-dd' })" style="width:160px" /><span class="fl ml10">出游人数</span><input type="number" class="input ml10" /><span class="fl ml5">人</span></div>
+							<div class="full fl mt15">
+								剩余数量：<span class="f16 c4a4a4a linethrough">¥298</span><span style="color:#d0021b;">（每个ID限购2件）</span><span class="ml50">月销量：</span><span class="ml15 f16 c4a4a4a">45</span>
+							</div>
+							<div class="price fl mt20">
+								<p class="full">原价<span class="ml15 f16 c4a4a4a linethrough">¥298</span><span class="ml20">折扣</span><span class="f16 ml5" style="color:#e97c1d;">5折</span></p>
+								<p class="full">现价<span class="money">¥</span><span class="currmoney">298</span></p>
+								<div class="btn">立即抢购</div>
+							</div>
+							<div class="action full"><img src="img/exclusive/3.png" /><span class="ml5">通知好友</span><img src="img/exclusive/4.png" class="ml20" /><span class="ml5">收藏</span><img src="img/exclusive/5.png" class="ml20" /><span class="ml5">分享</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--底部-->
+		<div class="bottom tc" id="bottom">
+			<p class="bottom1"><span>关于我们</span><span class="split">|</span><span>联系我们</span><span class="split">|</span><span>服务协议</span><span class="split">|</span><span>帮助中心</span></p>
+			<p class="bottom2"><span>友情链接：</span><span class="split">&nbsp;</span><span>链接1</span><span class="split">&nbsp;</span><span>链接2</span><span class="split">&nbsp;</span><span>链接3</span><span class="split">&nbsp;</span><span>链接4</span><span class="split">&nbsp;</span><span>链接5</span></p>
+			<div class="bottom3">2016旅游管家 版权所有 技术支持：创跃慧工作室</div>
+		</div>
+		<!--悬浮框-->
+		<div class="fright">
+			<div class="item item1">
+				<div class="tip">电话</div>
+			</div>
+			<div class="item item2">
+				<div class="tip">咨询</div>
+			</div>
+			<div class="item item3">
+				<div class="tip">微信</div>
+			</div>
+			<div class="item item4"></div>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript " src="js/jquery-1.10.2.min.js "></script>
+<script type="text/javascript " src="js/base.js"></script>
+<script type="text/javascript" src="js/datePicker/WdatePicker.js"></script>
+<script type="text/javascript ">
+	$(function() {
+
+	});
+</script>

@@ -19,6 +19,7 @@
 	font-family: PingFangSC-Regular;
 	font-size: 14px;
 	color: #4a4a4a;
+	margin-left: 5px;
 }
 
 .head3 .items .title .more {
@@ -143,7 +144,7 @@
 }
 
 .head3 .items .item .right .content .countdown {
-	line-height: 35px;
+	line-height: 38px;
 	margin-top: 15px;
 }
 
@@ -174,6 +175,7 @@
 	font-family: PingFangSC-Regular;
 	font-size: 14px;
 	color: #4a4a4a;
+	margin-left: 5px;
 }
 
 .head4 .items .title .more {
@@ -280,6 +282,7 @@
 	font-family: PingFangSC-Regular;
 	font-size: 14px;
 	color: #4a4a4a;
+	margin-left: 5px;
 }
 
 .head5 .items .title .more {

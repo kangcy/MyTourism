@@ -52,6 +52,10 @@ body {
 	display: inline-block;
 }
 
+.linethrough {
+	text-decoration: line-through;
+}
+
 .full {
 	width: 100%;
 }
@@ -219,12 +223,15 @@ body {
 .mt30 {
 	margin-top: 30px !important;
 }
+
 .mt40 {
 	margin-top: 40px !important;
 }
+
 .mt50 {
 	margin-top: 50px !important;
 }
+
 .mb0 {
 	margin-bottom: 0px !important;
 }
