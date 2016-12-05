@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/exclusive.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="js/msgbox/Page.css" />
+		<link rel="stylesheet" href="js/msgbox/msgbox.css" />
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="full head1 tc fl">
+			<div class="items tr">
+				<div class="item" onclick="LoginTan(1)">登录</div>
+				<div class="item border" onclick="LoginTan(2)">注册</div>
+			</div>
+		</div>
+		<div class="full head2 tc fl">
+			<div class="items f16">
+				<div class="item first"><img src="img/index/logo.png" /></div>
+				<div class="item">首页</div>
+				<div class="item">会员专享</div>
+				<div class="item">私人订制</div>
+				<div class="item">关于我们</div>
+				<div class="item">旅游众筹</div>
+				<div class="item">订购/退订</div>
+			</div>
+		</div>
+		<!--旅游众筹-->
+		<div class="full head3 fl tc">
+			<div class="items tl">
+				<div class="title">限时秒杀</div>
+				<div class="border" style=""><img src="img/travelchip/8.png" /></div>
+				<div class="item">
+					<img class="left fl" src="img/exclusive/2.png" />
+					<div class="right fl">
+						<img class="icon" src="img/exclusive/1.png" />
+						<div class="content">
+							<div class="title1">南京飞往九寨沟3日游</div>
+							<div class="price">
+								<p>原价<span>¥298</span></p>
+								<p>现价<span>¥298</span><span class="fr">如何获取积分？</span><span class="fr">查看积分</span></p>
+							</div>
+							<div class="full tl">
+								<span class="title2 fl">数量</span><span class="price fl">1</span>
+								<div class="try fr">已有<span>0</span>人参与</div>
+							</div>
+							<div><span>出游日期</span><input type="text" class="input Wdate" id="time" onclick="WdatePicker({ el: $dp.$('time'), dateFmt: 'yyyy-MM-dd' })" /><span class="fl ml10">出游人数</span><input type="number" class="input ml10" style="width:50px" /><span>人</span></div>
+							<div><div class="btn">活动提醒</div><span>活动倒计时</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="divPager" align="center" style="margin-top:50px;float: left;width: 100%;"></div>
+
+		<!--底部-->
+		<div class="bottom tc" id="bottom">
+			<p class="bottom1"><span>关于我们</span><span class="split">|</span><span>联系我们</span><span class="split">|</span><span>服务协议</span><span class="split">|</span><span>帮助中心</span></p>
+			<p class="bottom2"><span>友情链接：</span><span class="split">&nbsp;</span><span>链接1</span><span class="split">&nbsp;</span><span>链接2</span><span class="split">&nbsp;</span><span>链接3</span><span class="split">&nbsp;</span><span>链接4</span><span class="split">&nbsp;</span><span>链接5</span></p>
+			<div class="bottom3">2016旅游管家 版权所有 技术支持：创跃慧工作室</div>
+		</div>
+		<!--悬浮框-->
+		<div class="fright">
+			<div class="item item1">
+				<div class="tip">电话</div>
+			</div>
+			<div class="item item2">
+				<div class="tip">咨询</div>
+			</div>
+			<div class="item item3">
+				<div class="tip">微信</div>
+			</div>
+			<div class="item item4"></div>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript " src="js/jquery-1.10.2.min.js "></script>
+<script type="text/javascript " src="js/base.js"></script>
+<script type="text/javascript" src="js/msgbox/msgbox.js"></script>
+<script type="text/javascript" src="js/jquery.myPagination5.0.js"></script>
+<script type="text/javascript ">
+	var currentIndex = 1;
+	var recordCount = 100;
+	var pageSize = 5;
+	$(function() {
+		$("#divPager").myPagination({
+			currPage: currentIndex,
+			pageCount: Math.ceil(recordCount / pageSize),
+			pageSize: pageSize,
+			links: 'javascript:void(0);',
+			cssStyle: 'jogger',
+			ajax: {
+				on: false,
+				onClick: function(page) {
+					ZENG.msgbox.show(" 正在加载" + page + "页，请稍后...", 6, 1000);
+					window.location.href = "/travelchips.html?page=" + page;
+				}
+			}
+		});
+	});
+</script>

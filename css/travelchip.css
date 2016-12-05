@@ -177,10 +177,20 @@
 	font-family: MLingWaiMedium-TC;
 	font-size: 24px;
 	color: #e97c1d;
-	border-bottom: 1px solid #d1d1d1;
-	background: url(../img/travelchip/8.png) bottom left no-repeat;
-	background-size: auto 1px;
-	padding-bottom: 15px;
+	line-height: 50px;
+}
+
+.head5 .item .right .border {
+	height: 1px;
+	width: 100%;
+	background: #d1d1d1;
+	margin-bottom: 30px;
+}
+
+.head5 .item .right .border img {
+	width: 95px;
+	height: 1px;
+	float: left;
 }
 
 .head5 .item .right .list {
