@@ -52,6 +52,11 @@ body {
 	display: inline-block;
 }
 
+.btn,
+.close {
+	cursor: pointer;
+}
+
 .linethrough {
 	text-decoration: line-through;
 }

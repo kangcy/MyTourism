@@ -50,7 +50,7 @@
 							</div>
 							<div class="full fl mt15" style="line-height:38px;"><span class="fl">出游日期</span><input type="text" class="input Wdate ml10" id="time" onclick="WdatePicker({ el: $dp.$('time'), dateFmt: 'yyyy-MM-dd' })" style="width:160px" /><span class="fl ml10">出游人数</span><input type="number" class="input ml10" /><span class="fl ml5">人</span></div>
 							<div class="full fl countdown">
-								<div class="btn fl">活动提醒</div><img src="img/exclusive/6.png" class="mt10 ml15" /><span class="ml5">活动倒计时：</span><span class="ml10 f16" style="color:#4a4a4a;">01天12时20分24秒</span></div>
+								<div class="btn fl" onclick="RemindTan(1)">活动提醒</div><img src="img/exclusive/6.png" class="mt10 ml15" /><span class="ml5">活动倒计时：</span><span class="ml10 f16" style="color:#4a4a4a;">01天12时20分24秒</span></div>
 							<div class="action full"><img src="img/exclusive/3.png" /><span class="ml5">通知好友</span><img src="img/exclusive/4.png" class="ml20" /><span class="ml5">收藏</span><img src="img/exclusive/5.png" class="ml20" /><span class="ml5">分享</span></div>
 						</div>
 					</div>
@@ -174,11 +174,14 @@
 		</div>
 
 		<!--活动提醒弹窗-->
-		<div class="tanbg" id="tanbg"></div>
-		<div class="remindcover" id="remind">
+		<div class="tanbg hide" id="tanbg"></div>
+		<div class="remindcover hide" id="remind">
 			<div class="add hide">
-				<img src="img/exclusive/12.png" class="cover" />
-				<img src="img/common/2.png" class="close" onclick="LoginTan(0)">
+				<div class="border1"></div>
+				<div class="border2"></div>
+				<div class="border3"></div>
+				<div class="border4"></div>
+				<img src="img/common/2.png" class="close" onclick="RemindTan(0)">
 				<div class="content">
 					<div class="full tl">
 						<div class="name">内容：</div><input type="text" class="input" value="asda阿萨德发" /></div>
@@ -193,12 +196,15 @@
 							<option value="4">提前20分钟</option>
 						</select>
 					</div>
-					<div class="btn">添加提醒</div>
+					<div class="btn" onclick="RemindTan(2)">添加提醒</div>
 				</div>
 			</div>
-			<div class="success">
-				<img src="img/exclusive/12.png" class="cover" />
-				<img src="img/common/2.png" class="close" onclick="LoginTan(0)">
+			<div class="success hide">
+				<div class="border1"></div>
+				<div class="border2"></div>
+				<div class="border3"></div>
+				<div class="border4"></div>
+				<img src="img/common/2.png" class="close" onclick="RemindTan(0)">
 				<div class="content">
 					<div>
 						<img src="img/exclusive/13.png" class="fl"><span class="ml10 fl">您已成功添加提醒</span>
@@ -217,4 +223,25 @@
 	$(function() {
 		$('select:not(.ignore)').niceSelect();
 	});
+
+	//提醒弹窗
+	function RemindTan(index) { //关闭弹窗
+		if(index <= 0) {
+			$("#tanbg").addClass("hide");
+			$("#remind").removeClass("bounceIn").addClass("bounceOut").addClass("hide");
+			return;
+		}
+		//添加
+		else if(index == 1) {
+			$("#remind").find(".success").addClass("hide");
+			$("#remind").find(".add").removeClass("hide");
+		}
+		//成功
+		else if(index == 2) {
+			$("#remind").find(".add").addClass("hide");
+			$("#remind").find(".success").removeClass("hide");
+		}
+		$("#tanbg").removeClass("hide");
+		$("#remind").removeClass("hide").removeClass("bounceOut").addClass("bounceIn");
+	}
 </script>

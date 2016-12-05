@@ -406,12 +406,40 @@
 	position: relative;
 }
 
-.remindcover .add .cover {
+.remindcover .add .border1 {
 	position: absolute;
 	left: 50px;
 	top: 50px;
 	width: 800px;
+	height: 1px;
+	background: url(../img/exclusive/14.png) repeat;
+}
+
+.remindcover .add .border2 {
+	position: absolute;
+	left: 50px;
+	top: 50px;
 	height: 400px;
+	width: 1px;
+	background: url(../img/exclusive/15.png) repeat;
+}
+
+.remindcover .add .border3 {
+	position: absolute;
+	left: 50px;
+	bottom: 50px;
+	width: 800px;
+	height: 1px;
+	background: url(../img/exclusive/14.png) repeat;
+}
+
+.remindcover .add .border4 {
+	position: absolute;
+	right: 50px;
+	top: 50px;
+	height: 400px;
+	width: 1px;
+	background: url(../img/exclusive/15.png) repeat;
 }
 
 .remindcover .add .content {
@@ -466,6 +494,7 @@
 	position: absolute;
 	right: 10px;
 	top: 10px;
+	cursor: pointer;
 }
 
 .remindcover .success {
@@ -477,12 +506,40 @@
 	position: relative;
 }
 
-.remindcover .success .cover {
+.remindcover .success .border1 {
 	position: absolute;
 	left: 50px;
 	top: 50px;
 	width: 800px;
+	height: 1px;
+	background: url(../img/exclusive/14.png) repeat;
+}
+
+.remindcover .success .border2 {
+	position: absolute;
+	left: 50px;
+	top: 50px;
 	height: 300px;
+	width: 1px;
+	background: url(../img/exclusive/15.png) repeat;
+}
+
+.remindcover .success .border3 {
+	position: absolute;
+	left: 50px;
+	bottom: 50px;
+	width: 800px;
+	height: 1px;
+	background: url(../img/exclusive/14.png) repeat;
+}
+
+.remindcover .success .border4 {
+	position: absolute;
+	right: 50px;
+	top: 50px;
+	height: 300px;
+	width: 1px;
+	background: url(../img/exclusive/15.png) repeat;
 }
 
 .remindcover .success .content {
