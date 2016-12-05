@@ -529,3 +529,74 @@ body {
 	margin-top: 25px;
 	display: inline-block;
 }
+
+.logincover .notbind {
+	opacity: 0.75;
+	background: #000000;
+	border-radius: 8px;
+	width: 760px;
+	height: 200px;
+	display: inline-block;
+}
+
+.logincover .notbind .top1 {
+	border-bottom: 1px solid #ffffff;
+	width: 94%;
+	line-height: 30px;
+	color: #ffffff;
+	font-size: 18px;
+	text-align: left;
+	margin: 15px 3%;
+	padding-bottom: 10px;
+}
+
+.logincover .notbind .top2 {
+	font-family: PingFangSC-Regular;
+	font-size: 24px;
+	color: #ffffff;
+	line-height: 38px;
+	margin-top: 25px;
+	display: inline-block;
+}
+
+.logincover .notuser {
+	opacity: 0.75;
+	background: #000000;
+	border-radius: 8px;
+	width: 760px;
+	height: 400px;
+	display: inline-block;
+}
+
+.logincover .notuser .top1 {
+	border-bottom: 1px solid #ffffff;
+	width: 94%;
+	line-height: 30px;
+	color: #ffffff;
+	font-size: 18px;
+	text-align: left;
+	margin: 15px 3%;
+	padding-bottom: 10px;
+}
+
+.logincover .notuser .top2 {
+	font-family: PingFangSC-Regular;
+	line-height: 38px;
+	margin-top: 25px;
+	display: inline-block;
+	font-family: MLingWaiMedium-TC;
+	font-size: 36px;
+	color: #ffffff;
+}
+
+.logincover .notuser .top2 .btn {
+	background: #e97c1d;
+	border-radius: 3px;
+	width: 120px;
+	height: 35px;
+	line-height: 35px;
+	display: inline-block;
+	font-family: PingFangSC-Semibold;
+	font-size: 18px;
+	color: #ffffff;
+}

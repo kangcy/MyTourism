@@ -227,11 +227,11 @@
 		<div class="tanbg hide" id="tanbg"></div>
 		<!--登录、注册框-->
 		<div class="logincover hide" id="login">
-			<div class="logincontent">
+			<div class="logincontent hide">
 				<img src="img/common/2.png" class="fr mr10 mt10" onclick="LoginTan(0)">
 				<img src="img/common/3.jpg" class="full">
 				<!--登录-->
-				<div class="login">
+				<div class="login hide">
 					<input type="text" class="input" placeholder="手机号" />
 					<input type="text" class="input" placeholder="密码" />
 					<div class="btnLogin">立即登录</div>
@@ -261,7 +261,22 @@
 			<!--密码重置成功-->
 			<div class="pwdcontent hide">
 				<div class="top1">提示<img src="img/common/2.png" class="fr" onclick="LoginTan(0)"></div>
-				<div class="top2"><img src="img/common/1.png" class="fl" style="margin-left:200px;"><span class="ml10 fl">恭喜您，密码重置成功！<span style="color:#f5a623;">立即登录</span></span>
+				<div class="top2"><img src="img/common/1.png" class="fl"><span class="ml10 fl">恭喜您，密码重置成功！<span style="color:#f5a623;">立即登录</span></span>
+				</div>
+			</div>
+			<!--未绑定-->
+			<div class="notbind hide">
+				<div class="top1">提示<img src="img/common2.png" class="fr" onclick="LoginTan(0)"></div>
+				<div class="top2"><img src="img/common/4.png" class="fl"><span class="ml10 fl">该手机号未绑定账户</span>
+				</div>
+			</div>
+			<!--非会员-->
+			<div class="notuser hide">
+				<div class="top1">提示<img src="img/common/2.png" class="fr" onclick="LoginTan(0)"></div>
+				<div class="top2">
+					<p class="full">加入旅游管家会员，尽享优惠！</p>
+					<p class="full">您还未成为会员哦！</p>
+					<div class="btn">了解详情</div>
 				</div>
 			</div>
 		</div>
