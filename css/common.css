@@ -42,7 +42,7 @@ body {
 	padding: 0px;
 	margin: 0px;
 	width: 100%;
-	min-width: 1000px;
+	min-width: 1100px;
 	height: 100%;
 	line-height: 1;
 	font-size: 14px;
@@ -163,7 +163,9 @@ body {
 .ml15 {
 	margin-left: 15px !important;
 }
-
+.ml50 {
+	margin-left: 50px !important;
+}
 .mr10 {
 	margin-right: 10px !important;
 }
@@ -502,8 +504,7 @@ body {
 }
 
 .logincover .pwdcontent {
-	opacity: 0.75;
-	background: #000000;
+	background: rgba(0, 0, 0, 0.75);
 	border-radius: 8px;
 	width: 760px;
 	height: 200px;
@@ -531,8 +532,7 @@ body {
 }
 
 .logincover .notbind {
-	opacity: 0.75;
-	background: #000000;
+	background: rgba(0, 0, 0, 0.75);
 	border-radius: 8px;
 	width: 760px;
 	height: 200px;
@@ -560,8 +560,7 @@ body {
 }
 
 .logincover .notuser {
-	opacity: 0.75;
-	background: #000000;
+	background: rgba(0, 0, 0, 0.75);
 	border-radius: 8px;
 	width: 760px;
 	height: 400px;

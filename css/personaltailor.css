@@ -32,7 +32,7 @@
 }
 
 .head4 .items {
-	width: 1000px;
+	width: 1100px;
 	display: inline-block;
 	background: #fff;
 }
@@ -139,7 +139,7 @@
 }
 
 .head5 .items {
-	width: 1000px;
+	width: 1100px;
 	display: inline-block;
 	background: #fff;
 	padding-bottom: 30px;
@@ -232,12 +232,10 @@
 	margin: 30px;
 }
 
-
-.resultcontent
-{
-	opacity:0.74;
-background:#000000;
-border-radius:8px;
-width:665px;
-height:371px;
+.resultcontent {
+	opacity: 0.74;
+	background: #000000;
+	border-radius: 8px;
+	width: 665px;
+	height: 371px;
 }

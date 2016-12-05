@@ -4,12 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
-		<title>旅游众筹详细页</title>
+		<title>旅游众筹</title>
 		<link rel="stylesheet" href="css/common.css">
-		<link rel="stylesheet" href="css/travelchips.css">
+		<link rel="stylesheet" href="css/travelchip.css">
 		<link rel="stylesheet" href="css/animate.css">
-		<link rel="stylesheet" href="js/msgbox/Page.css" />
-		<link rel="stylesheet" href="js/msgbox/msgbox.css" />
 	</head>
 
 	<body>
@@ -33,13 +31,31 @@
 		</div>
 		<div class="full head3 tc fl">
 			<div class="items">
-				<div class="item curr">全部</div>
+				<div class="item">旅游众筹</div>
+				<div class="item">></div>
 				<div class="item">进行中</div>
-				<div class="item">即将开始</div>
-				<div class="item">已完成</div>
+				<div class="item">></div>
+				<div class="item">济州一地3晚4日跟团游</div>
 			</div>
 		</div>
-
+		<div class="full head4 tc fl">
+			<div class="items">
+				<img src="img/travelchip/1.png" class="bg" />
+				<div class="cover">
+					<div class="content">
+						<p class="title full fl mt0 tl">梦在心中，行在脚下——Cycling France，向最伟大的自行车运动致敬</p>
+						<div class="totalnum full fl tl mt10">
+							<div class="currnum"></div>
+						</div>
+						<p class="numdesc full fl tl"><span class="fl">已支持：¥1243</span><span class="fr">目标金额：¥5999</span></p>
+						<div class="choose full fl tl mt30"><span>份额选择</span><span class="ml50 f20">-</span><input type="number" class="input ml15" /><span class="ml15 f20">+</span><span class="money ml50">¥</span><span class="currmoney ml5">8</span></div>
+						<p class="info full fl tl mt15">每增加一份，您的中奖概率将加大哦</p>
+						<p class="info full fl tl">您已阅读并同意《旅游管家服务使用协议》</p>
+						<div class="btn">我要参加</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!--旅游众筹-->
 		<div class="full head4 fl tc">
 			<div class="items tl">
@@ -87,7 +103,6 @@
 				</div>
 			</div>
 		</div>
-		<div id="divPager" align="center" style="margin-top:50px;float: left;width: 100%;"></div>
 
 		<!--底部-->
 		<div class="bottom tc" id="bottom">
@@ -113,26 +128,8 @@
 </html>
 <script type="text/javascript " src="js/jquery-1.10.2.min.js "></script>
 <script type="text/javascript " src="js/base.js"></script>
-<script type="text/javascript" src="js/msgbox/msgbox.js"></script>
-<script type="text/javascript" src="js/jquery.myPagination5.0.js"></script>
 <script type="text/javascript ">
-	var currentIndex = 1;
-	var recordCount = 100;
-	var pageSize = 5;
 	$(function() {
-		$("#divPager").myPagination({
-			currPage: currentIndex,
-			pageCount: Math.ceil(recordCount / pageSize),
-			pageSize: pageSize,
-			links: 'javascript:void(0);',
-			cssStyle: 'jogger',
-			ajax: {
-				on: false,
-				onClick: function(page) {
-					ZENG.msgbox.show(" 正在加载" + page + "页，请稍后...", 6, 1000);
-					window.location.href = "/travelchips.html?page=" + page;
-				}
-			}
-		});
+
 	});
 </script>
