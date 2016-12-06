@@ -1,5 +1,5 @@
 ﻿@font-face {
-	font-family: "PingFangRegular";
+	font-family: "PingFang SC";
 	font-style: normal;
 	font-weight: normal;
 	font-stretch: normal;
@@ -11,7 +11,7 @@ html {
 	margin: 0px;
 	padding: 0px;
 	position: relative;
-	font-family: "PingFangRegular";
+	font-family: "PingFang SC";
 }
 
 html {
