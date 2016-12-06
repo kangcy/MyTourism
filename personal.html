@@ -54,11 +54,10 @@
 					<div class="step1">
 						<div class="item">
 							<div class="left1"><span class="tip fr mr10"><span style="color:#ff001f;margin-right:5px;margin-top: 3px;">*</span>目的地</span>
-							</div><input type="text" class="input" /><span class="tip ml10">热门推荐：</span><span class="city">长城</span><span class="city">大理</span><span class="city">张家界</span><span class="city">敦煌</span></div>
+							</div><input type="text" class="input" maxlength="30" /><span class="tip ml10">热门推荐：</span><span class="city">长城</span><span class="city">大理</span><span class="city">张家界</span><span class="city">敦煌</span></div>
 						<div class="item">
 							<div class="left1"><span class="tip fr mr10"><span style="color:#ff001f;margin-right:5px;margin-top: 3px;">*</span>人均预算</span>
 							</div>
-							<!--<input type="text" class="input" />-->
 							<select>
 								<option value="0">1000</option>
 								<option value="1">2000</option>
@@ -71,22 +70,28 @@
 							</div>
 							<input type="text" class="input Wdate" id="time" onclick="WdatePicker({ el: $dp.$('time'), dateFmt: 'yyyy-MM-dd' })" /><input type="number" class="input ml10" style="width:50px" /><span class="fl ml10">天</span>
 						</div>
-						<div class="item mt20">
+						<div class="item">
 							<div class="next fl" style="margin-left: 100px;" onclick="Step(2)">下一步</div>
 						</div>
 					</div>
 					<!--步骤2-->
 					<div class="step2 hide">
 						<div class="item">
-							<div class="left1"><span class="tip fr mr10">酒店星级</span></div><input type="text" class="input" /></div>
+							<div class="left1"><span class="tip fr mr10">酒店星级</span></div>
+							<select>
+								<option value="0">五星级</option>
+								<option value="1">四星级</option>
+								<option value="2">三星级</option>
+							</select>
+						</div>
 						<div class="item">
-							<div class="left1"><span class="tip  fr mr10">出行人员</span></div><input type="number" class="input" style="width:50px" /><span class="fl ml10">成人</span><input type="number" class="input ml10" style="width:50px" /><span class="fl ml10">儿童</span><input type="number" class="input ml10" style="width:50px" /><span class="fl ml10">老人</span></div>
+							<div class="left1"><span class="tip fr mr10">出行人员</span></div><input type="number" class="input" style="width:50px" /><span class="fl ml10">成人</span><input type="number" class="input ml10" style="width:50px" /><span class="fl ml10">儿童</span><input type="number" class="input ml10" style="width:50px" /><span class="fl ml10">老人</span></div>
 						<div class="item">
 							<div class="left1"><span class="tip fr mr10">备注留言</span>
 							</div>
-							<textarea class="remark" maxlength="150"></textarea>
+							<textarea class="remark fl" maxlength="150"></textarea>
 						</div>
-						<div class="item mt20">
+						<div class="item">
 							<div class="prev fl" style="margin-left: 100px;" onclick="Step(1)">上一步</div>
 							<div class="next fl ml15" onclick="Step(3)">下一步</div>
 						</div>
@@ -94,13 +99,13 @@
 					<!--步骤3-->
 					<div class="step3 hide">
 						<div class="item">
-							<div class="left1"><span class="tip fr mr10">您的姓名</span> </div><input type="text" class="input" /></div>
+							<div class="left1"><span class="tip fr mr10">您的姓名</span> </div><input type="text" class="input" maxlength="15" /></div>
 						<div class="item">
 							<div class="left1"><span class="tip fr mr10"><span style="color:#ff001f;margin-right:5px;margin-top: 3px;">*</span>手机号码</span>
 							</div>
-							<input type="phone" class="input" maxlength="11" />
+							<input type="number" class="input" maxlength="11" />
 						</div>
-						<div class="item mt20">
+						<div class="item">
 							<div class="prev fl" style="margin-left: 100px;" onclick="Step(2)">上一步</div>
 							<div class="next fl ml15">提交</div>
 						</div>
@@ -111,7 +116,7 @@
 
 		<!--成功案例-->
 		<div class="full head5 fl tc">
-			<div class="items">
+			<div class="items mt20">
 				<div class="title">成功案例<span>Limit spike</span></div>
 				<div class="left fl">
 					<img src="img/personal/3.png" class="full" />

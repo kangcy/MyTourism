@@ -1,6 +1,7 @@
 .nice-select {
 	width: 253px;
 	border-radius: 3px;
+	text-align: center !important;
 }
 
 .nice-select .list {
@@ -9,6 +10,7 @@
 
 .nice-select .option {
 	width: 203px;
+	text-align: center !important;
 }
 
 
@@ -20,7 +22,7 @@
 
 .head3 .cover {
 	left: 0px;
-	bottom: 15%;
+	bottom: 20%;
 	position: absolute;
 	text-align: center;
 	width: 100%;
@@ -36,6 +38,7 @@
 	border-radius: 8px;
 	font-size: 36px;
 	color: #ffffff;
+	font-family: "MLingWaiFHK-Light";
 }
 
 
@@ -67,7 +70,7 @@
 }
 
 .head4 .items .item {
-	line-height: 33px;
+	line-height: 40px;
 	margin-bottom: 20px;
 	width: 100%;
 	float: left;
@@ -92,10 +95,6 @@
 	margin-bottom: 50px;
 }
 
-.head4 .items .item span {
-	float: left;
-}
-
 .head4 .items .item .city {
 	font-family: PingFangSC-Semibold;
 	font-size: 12px;
@@ -111,6 +110,8 @@
 	float: left;
 	text-align: center;
 	outline: none;
+	font-size: 14px;
+	color: #4a4a4a;
 }
 
 .head4 .items .item .remark {
@@ -127,6 +128,7 @@
 	border-radius: 100px;
 	width: 120px;
 	height: 35px;
+	line-height: 35px;
 	display: inline-block;
 	font-size: 14px;
 	color: #ffffff;
@@ -138,6 +140,7 @@
 	border-radius: 100px;
 	width: 120px;
 	height: 35px;
+	line-height: 35px;
 	display: inline-block;
 	font-size: 14px;
 	color: #ffffff;

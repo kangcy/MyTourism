@@ -903,9 +903,12 @@ body {
 	line-height: 38px;
 	margin-top: 25px;
 	display: inline-block;
-	font-family: MLingWaiMedium-TC;
 	font-size: 36px;
 	color: #ffffff;
+}
+
+.logincover .notuser .top2 .name {
+	font-family: "MingLan_TC";
 }
 
 .logincover .notuser .top2 .btn {
