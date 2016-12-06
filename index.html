@@ -108,7 +108,7 @@
 				<div class="item2 mt20">
 					<img class="left fl" src="img/index/9.png" />
 					<div class="right fl">
-						<div class="title1">梦在心中，行在脚下——Cycling France，向最伟大的自行车运动致敬</div>
+						<div class="title1 bold">梦在心中，行在脚下——Cycling France，向最伟大的自行车运动致敬</div>
 						<div class="full tl mt10 mb10" style="line-height: 35px;display:inline-block;">
 							<span class="title2 fl">市场价</span><span class="price fl">¥5999</span>
 							<div class="try fr" onclick="JoinTan(1)">1元试试</div>
@@ -254,20 +254,27 @@
 		<div class="logincover hide" id="login">
 			<div class="logincontent hide">
 				<img src="img/common/2.png" class="fr mr10 mt10" onclick="LoginTan(0)">
-				<img src="img/common/3.jpg" class="full">
+				<div class="fl" style="padding: 20px;width:480px;">
+					<div class="border fl"></div>
+					<div class="title fl">
+						<p class="name">旅游管家</p>
+						<p class="subname">Travel steward</p>
+					</div>
+					<div class="border fr"></div>
+				</div>
 				<!--登录-->
 				<div class="login hide">
 					<input type="text" class="input" placeholder="手机号" />
 					<input type="text" class="input" placeholder="密码" />
 					<div class="btnLogin">立即登录</div>
-					<div class="action"><span class="fl" style="color: #f5a623;" onclick="LoginTan(3)">忘记密码</span><span class="fr" style="color: #cbcbcb;">还没有账号？<span style="color:#f5a623;" onclick="LoginTan(2)">快速注册</span></span>
+					<div class="action"><span class="fl point" style="color:#f5a623;" onclick="LoginTan(3)">忘记密码</span><span class="fr" style="color: #cbcbcb;">还没有账号？<span style="color:#f5a623;" onclick="LoginTan(2)" class="point">快速注册</span></span>
 					</div>
 				</div>
 				<!--注册-->
 				<div class="register hide">
 					<input type="text" class="input" placeholder="手机号" />
 					<div class="btnLogin">立即注册</div>
-					<div class="action"><span class="fl" style="color: #f5a623;" onclick="LoginTan(3)">忘记密码</span><span class="fr" onclick="LoginTan(1)">立即登录</span></div>
+					<div class="action"><span class="fl point" style="color: #f5a623;" onclick="LoginTan(3)">忘记密码</span><span class="fr point" style="color: #f5a623;" onclick="LoginTan(1)">立即登录</span></div>
 				</div>
 				<!--找回密码-->
 				<div class="forget step1 hide">
@@ -277,16 +284,16 @@
 				</div>
 				<!--找回密码-->
 				<div class="forget step2 hide">
-					<input type="text" class="input fl" placeholder="请输入收到的验证码" /><span class="ml5 mt20 fl" style="color:#f5a623;">58s</span><span class="cfff fl ml5 mt20">沒收到？<span style="color:#f5a623;">再发一次</span></span>
+					<input type="text" class="input fl" placeholder="请输入收到的验证码" /><span class="ml5 mt20 fl" style="color:#f5a623;">58s</span><span class="cfff fl ml5 mt20">沒收到？<span style="color:#f5a623;" class="point">再发一次</span></span>
 					<input type="text" class="input fl" placeholder="设置新密码" />
-					<input type="text" class="input fl" placeholder="在输入一次新密码" />
+					<input type="text" class="input fl" placeholder="再输入一次新密码" />
 					<div class="btnLogin" onclick="LoginTan(5)">立即重置</div>
 				</div>
 			</div>
 			<!--密码重置成功-->
 			<div class="pwdcontent hide">
 				<div class="top1">提示<img src="img/common/2.png" class="fr" onclick="LoginTan(0)"></div>
-				<div class="top2"><img src="img/common/1.png" class="fl"><span class="ml10 fl">恭喜您，密码重置成功！<span style="color:#f5a623;">立即登录</span></span>
+				<div class="top2"><img src="img/common/1.png" class="fl"><span class="ml10 fl">恭喜您，密码重置成功！<span style="color:#f5a623;" class="point" onclick="LoginTan(1)">立即登录</span></span>
 				</div>
 			</div>
 			<!--未绑定-->

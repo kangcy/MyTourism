@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>私人定制</title>
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/personal.css">
+		<link rel="stylesheet" href="css/animate.css">
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="full head1 tc fl">
+			<div class="items tr">
+				<div class="item" onclick="LoginTan(1)">登录</div>
+				<div class="item border" onclick="LoginTan(2)">注册</div>
+			</div>
+		</div>
+		<div class="full head2 tc fl">
+			<div class="items f20">
+				<div class="item"><img src="img/index/logo.png" /></div>
+				<div class="item" onclick="Link(1)">首页</div>
+				<div class="item" onclick="Link(2)">会员专享</div>
+				<div class="item" onclick="Link(3)">私人订制</div>
+				<div class="item" onclick="Link(4)">旅游众筹</div>
+				<div class="item" onclick="Link(5)">订购/退订</div>
+				<div class="btn">立即订购</div>
+			</div>
+		</div>
+		<div class="full head22 tc fl" id="subtitle">
+			<div class="items f16 tr">
+				<div class="item" onclick="Link(1)">首页</div>
+				<div class="item" onclick="Link(2)">会员专享</div>
+				<div class="item" onclick="Link(3)">私人订制</div>
+				<div class="item" onclick="Link(4)">旅游众筹</div>
+				<div class="item" onclick="Link(5)">订购/退订</div>
+				<div class="btn">立即订购</div>
+			</div>
+		</div>
+		<div class="head3">
+			<img src="img/personal/1.png" class="full" />
+			<div class="cover">
+				<div>一分钟订制您的私人行程！</div>
+			</div>
+		</div>
+		<div class="full head4 tc fl">
+			<div class="items mt30">
+				<div class="title">立即订制</div>
+				<div class="desc" id="step">
+					<p class="need tl">带<span style="color:#ff001f;">*</span>号为必填项～</p>
+					<!--步骤1-->
+					<div class="step1">
+						<div class="item">
+							<div class="left1"><span class="tip fr mr10"><span style="color:#ff001f;margin-right:5px;margin-top: 3px;">*</span>目的地</span>
+							</div><input type="text" class="input" /><span class="tip ml10">热门推荐：</span><span class="city">长城</span><span class="city">大理</span><span class="city">张家界</span><span class="city">敦煌</span></div>
+						<div class="item">
+							<div class="left1"><span class="tip fr mr10"><span style="color:#ff001f;margin-right:5px;margin-top: 3px;">*</span>人均预算</span>
+							</div>
+							<!--<input type="text" class="input" />-->
+							<select>
+								<option value="0">1000</option>
+								<option value="1">2000</option>
+								<option value="2">5000</option>
+								<option value="4">10000</option>
+							</select>
+						</div>
+						<div class="item">
+							<div class="left1"><span class="tip fr mr10">出发时间</span>
+							</div>
+							<input type="text" class="input Wdate" id="time" onclick="WdatePicker({ el: $dp.$('time'), dateFmt: 'yyyy-MM-dd' })" /><input type="number" class="input ml10" style="width:50px" /><span class="fl ml10">天</span>
+						</div>
+						<div class="item mt20">
+							<div class="next fl" style="margin-left: 100px;" onclick="Step(2)">下一步</div>
+						</div>
+					</div>
+					<!--步骤2-->
+					<div class="step2 hide">
+						<div class="item">
+							<div class="left1"><span class="tip fr mr10">酒店星级</span></div><input type="text" class="input" /></div>
+						<div class="item">
+							<div class="left1"><span class="tip  fr mr10">出行人员</span></div><input type="number" class="input" style="width:50px" /><span class="fl ml10">成人</span><input type="number" class="input ml10" style="width:50px" /><span class="fl ml10">儿童</span><input type="number" class="input ml10" style="width:50px" /><span class="fl ml10">老人</span></div>
+						<div class="item">
+							<div class="left1"><span class="tip fr mr10">备注留言</span>
+							</div>
+							<textarea class="remark" maxlength="150"></textarea>
+						</div>
+						<div class="item mt20">
+							<div class="prev fl" style="margin-left: 100px;" onclick="Step(1)">上一步</div>
+							<div class="next fl ml15" onclick="Step(3)">下一步</div>
+						</div>
+					</div>
+					<!--步骤3-->
+					<div class="step3 hide">
+						<div class="item">
+							<div class="left1"><span class="tip fr mr10">您的姓名</span> </div><input type="text" class="input" /></div>
+						<div class="item">
+							<div class="left1"><span class="tip fr mr10"><span style="color:#ff001f;margin-right:5px;margin-top: 3px;">*</span>手机号码</span>
+							</div>
+							<input type="phone" class="input" maxlength="11" />
+						</div>
+						<div class="item mt20">
+							<div class="prev fl" style="margin-left: 100px;" onclick="Step(2)">上一步</div>
+							<div class="next fl ml15">提交</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--成功案例-->
+		<div class="full head5 fl tc">
+			<div class="items">
+				<div class="title">成功案例<span>Limit spike</span></div>
+				<div class="left fl">
+					<img src="img/personal/3.png" class="full" />
+					<div class="info">
+						<span class="name">Tillie Wright</span><span class="date">2016-11-15</span>
+						<div class="desc">
+							<p class="full bold">客户评价</p>
+							满意！这次我们一行6人，虽然都有多次出国旅行的经历。但自己组团，还是第一次。在行前旅游管家已经做了非常周密的安排，但直到登机前，心中还是难免忐忑不安。接下来的旅行经历，让我们逐渐打消了顾虑。
+						</div>
+					</div>
+				</div>
+				<div class="right fr">
+					<div class="info">
+						<img src="img/personal/4.png" class="fl" />
+						<div class="code">
+							<p>扫描二维码 </p>
+							<p>了解详细行程</p>
+						</div>
+						<div class="desc">
+							<p>秘鲁巴西游玩12天</p>
+							<div class="tl">里约热内卢（Rio de Janeiro）：观赏美丽的伊帕内马（Ipanema）海滩上的游行，探寻充满艺术气息的圣特蕾莎（Santa Teresa），或者在拉帕（Lapa）的桑巴俱乐部热舞。 萨尔瓦多（Salvador）：白天在多姿多彩的Pelourinho闲逛，夜晚在喧闹的巴西黑人文化之都随着令人上瘾的节奏舞动。 欧鲁普雷图（Ouro Prêto）：在南美最美的殖民时代小镇里，沿着鹅卵石小街寻觅闹鬼的教堂和难得一见的巴西朗姆酒cachacas。</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<div class="bottom tc" id="bottom">
+			<p class="bottom1"><span>关于我们</span><span class="split">|</span><span>联系我们</span><span class="split">|</span><span>服务协议</span><span class="split">|</span><span>帮助中心</span></p>
+			<p class="bottom2"><span>友情链接：</span><span class="split">&nbsp;</span><span>链接1</span><span class="split">&nbsp;</span><span>链接2</span><span class="split">&nbsp;</span><span>链接3</span><span class="split">&nbsp;</span><span>链接4</span><span class="split">&nbsp;</span><span>链接5</span></p>
+			<div class="bottom3">2016旅游管家 版权所有 技术支持：创跃慧工作室</div>
+		</div>
+		<!--悬浮框-->
+		<div class="fright">
+			<div class="item item1">
+				<div class="tip">电话</div>
+			</div>
+			<div class="item item2">
+				<div class="tip">咨询</div>
+			</div>
+			<div class="item item3">
+				<div class="tip">微信</div>
+			</div>
+			<div class="item item4" onclick="Totop()"></div>
+		</div>
+		<!--提交弹窗-->
+		<div class="tanbg hide" id="tanbg"></div>
+		<div class="logincover hide" id="result">
+			<div class="resultcontent">
+				<img src="img/common/2.png" class="fr mr10 mt10">
+				<p>您已完成订制需要的提交</p>
+				<p>您的私人管家将于24个小时内与您联系</p>
+				<p>准备开始您的个性之旅吧！</p>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript " src="js/jquery-1.10.2.min.js "></script>
+<script type="text/javascript " src="js/base.js"></script>
+<script type="text/javascript" src="js/datePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
+<script type="text/javascript ">
+	$(function() {
+		$('select:not(.ignore)').niceSelect();
+	});
+
+	//定制流程
+	function Step(index) {
+		//流程1
+		if(index == 1) {
+			$("#step").find(".step2,.step3").addClass("hide");
+			$("#step").find(".step1").removeClass("hide");
+		}
+		//流程2
+		else if(index == 2) {
+			$("#step").find(".step1,.step3").addClass("hide");
+			$("#step").find(".step2").removeClass("hide");
+		}
+		//流程3
+		else if(index == 3) {
+			$("#step").find(".step1,.step2").addClass("hide");
+			$("#step").find(".step3").removeClass("hide");
+		}
+	}
+</script>

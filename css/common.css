@@ -3,7 +3,15 @@
 	font-style: normal;
 	font-weight: normal;
 	font-stretch: normal;
-	src: url("../font/PingFangRegular.ttf") format("opentype");
+	src: url("../font/PingFangRegular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "MLingWaiFHK-Light";
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+	src: url("../font/MLingWaiFHK-Light.otf") format("opentype");
 }
 
 html {
@@ -11,7 +19,7 @@ html {
 	margin: 0px;
 	padding: 0px;
 	position: relative;
-	font-family: "PingFangRegular";
+	font-family: "PingFang SC";
 }
 
 html {
@@ -35,7 +43,6 @@ div {
 	margin: 0px;
 	padding: 0px;
 	list-style-type: none;
-	/*font-family: '微软雅黑';*/
 }
 
 body {
@@ -626,7 +633,6 @@ body {
 }
 
 .bottom .bottom1 {
-	font-family: PingFangSC-Light;
 	font-size: 14px;
 	color: #636363;
 	width: 100%;
@@ -635,7 +641,6 @@ body {
 }
 
 .bottom .bottom2 {
-	font-family: PingFangSC-Light;
 	font-size: 14px;
 	color: #636363;
 	width: 100%;
@@ -648,7 +653,6 @@ body {
 	width: 100%;
 	height: 50px;
 	line-height: 50px;
-	font-family: PingFangSC-Regular;
 	font-size: 14px;
 	color: #ffffff;
 }
@@ -688,7 +692,8 @@ body {
 	background-image: url("../img/index/18.png");
 	background-repeat: no-repeat;
 	background-position: center 10px;
-	background-color: #e97c1d;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
 }
 
 .fright .item.item3 {
@@ -704,6 +709,10 @@ body {
 	background-image: url("../img/index/20.png");
 	background-repeat: no-repeat;
 	background-position: center center;
+}
+
+.fright .item:hover {
+	background-color: #e97c1d;
 }
 
 .fright .item .tip {
@@ -747,6 +756,32 @@ body {
 	display: inline-block;
 }
 
+.logincover .logincontent .border {
+	background: #ffffff;
+	width: 30%;
+	height: 1px;
+	margin-top: 50px;
+}
+
+.logincover .logincontent .title {
+	width: 40%;
+}
+
+.logincover .logincontent .title .name {
+	font-family: "MLingWaiFHK-Light";
+	font-size: 36px;
+	color: #f5a623;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+.logincover .logincontent .title .subname {
+	font-size: 20px;
+	color: #ffffff;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
 .logincover .logincontent .input {
 	background: #ffffff;
 	border: 1px solid #e97c1d;
@@ -757,6 +792,8 @@ body {
 	outline: none;
 	margin-top: 10px;
 	text-indent: 10px;
+	font-size: 16px;
+	color: #bebebe;
 }
 
 .logincover .logincontent .btnLogin {
@@ -765,7 +802,6 @@ body {
 	width: 288px;
 	height: 35px;
 	line-height: 35px;
-	font-family: PingFangSC-Regular;
 	font-size: 16px;
 	color: #ffffff;
 	display: inline-block;
@@ -776,8 +812,7 @@ body {
 .logincover .logincontent .action {
 	width: 288px;
 	display: inline-block;
-	margin-top: 10px;
-	font-family: PingFangSC-Regular;
+	margin-top: 15px;
 	font-size: 14px;
 }
 
@@ -811,7 +846,6 @@ body {
 }
 
 .logincover .pwdcontent .top2 {
-	font-family: PingFangSC-Regular;
 	font-size: 24px;
 	color: #ffffff;
 	line-height: 38px;
@@ -839,7 +873,6 @@ body {
 }
 
 .logincover .notbind .top2 {
-	font-family: PingFangSC-Regular;
 	font-size: 24px;
 	color: #ffffff;
 	line-height: 38px;
@@ -867,7 +900,6 @@ body {
 }
 
 .logincover .notuser .top2 {
-	font-family: PingFangSC-Regular;
 	line-height: 38px;
 	margin-top: 25px;
 	display: inline-block;
@@ -883,7 +915,6 @@ body {
 	height: 35px;
 	line-height: 35px;
 	display: inline-block;
-	font-family: PingFangSC-Semibold;
 	font-size: 18px;
 	color: #ffffff;
 }

@@ -31,14 +31,12 @@
 }
 
 .head3 .items .title .subtitle {
-	font-family: PingFangSC-Regular;
 	font-size: 14px;
 	color: #4a4a4a;
 	margin-left: 5px;
 }
 
 .head3 .items .title .more {
-	font-family: PingFangSC-Regular;
 	font-size: 12px;
 	color: #9b9b9b;
 	float: right;
@@ -61,7 +59,7 @@
 	height: 345px;
 	background: #ffffff;
 	float: left;
-	margin-top: 30px;
+	margin-top: 20px;
 }
 
 .head3 .items .item .left {
@@ -89,7 +87,6 @@
 }
 
 .head3 .items .item .right .content .title1 {
-	font-family: PingFangSC-Semibold;
 	font-size: 18px;
 	color: #4f4f4f;
 	line-height: 25px;
@@ -99,7 +96,6 @@
 	background: #f0f0f0;
 	width: 90%;
 	padding: 1% 5%;
-	font-family: PingFangSC-Regular;
 	font-size: 12px;
 	color: #6d6d6d;
 	margin-top: 10px;
@@ -118,7 +114,6 @@
 }
 
 .head3 .items .item .right .content .price .score {
-	font-family: PingFangSC-Regular;
 	font-size: 14px;
 	color: #ff001f;
 	margin-left: 10px;
@@ -131,7 +126,6 @@
 	height: 35px;
 	line-height: 35px;
 	display: inline-block;
-	font-family: PingFangSC-Semibold;
 	font-size: 14px;
 	color: #ffffff;
 	text-align: center;
@@ -187,14 +181,12 @@
 }
 
 .head4 .items .title .subtitle {
-	font-family: PingFangSC-Regular;
 	font-size: 14px;
 	color: #4a4a4a;
 	margin-left: 5px;
 }
 
 .head4 .items .title .more {
-	font-family: PingFangSC-Regular;
 	font-size: 12px;
 	color: #9b9b9b;
 	float: right;
@@ -216,7 +208,7 @@
 	width: 32%;
 	background: #ffffff;
 	float: left;
-	margin-top: 30px;
+	margin-top: 20px;
 	margin-left: 2%;
 }
 
@@ -234,12 +226,10 @@
 	margin: 5% 3%;
 	display: inline-block;
 	color: #9b9b9b;
-	font-family: .PingFangSC-Regular;
 	font-size: 14px;
 }
 
 .head4 .items .item .content .name {
-	font-family: .PingFangSC-Regular;
 	font-size: 18px;
 	color: #000000;
 }
@@ -248,7 +238,6 @@
 	width: 50%;
 	height: 100%;
 	display: inline-block;
-	font-family: .PingFangSC-Regular;
 	font-size: 14px;
 	line-height: 20px;
 	float: left;
@@ -271,7 +260,6 @@
 .head4 .items .item .content .currmoney {
 	font-size: 30px;
 	color: #ff001f;
-	margin-left: 5px;
 }
 
 
@@ -294,14 +282,12 @@
 }
 
 .head5 .items .title .subtitle {
-	font-family: PingFangSC-Regular;
 	font-size: 14px;
 	color: #4a4a4a;
 	margin-left: 5px;
 }
 
 .head5 .items .title .more {
-	font-family: PingFangSC-Regular;
 	font-size: 12px;
 	color: #9b9b9b;
 	float: right;
@@ -324,7 +310,7 @@
 	height: 280px;
 	background: #ffffff;
 	float: left;
-	margin-top: 30px;
+	margin-top: 20px;
 }
 
 .head5 .items .item .left {
@@ -347,14 +333,12 @@
 }
 
 .head5 .items .item .right .content .city {
-	font-family: PingFangSC-Regular;
 	font-size: 14px;
 	color: #21a7c6;
 	float: left;
 }
 
 .head5 .items .item .right .content .name {
-	font-family: PingFangSC-Semibold;
 	font-size: 18px;
 	color: #4f4f4f;
 	line-height: 25px;
@@ -369,7 +353,6 @@
 .head5 .items .item .right .content .currmoney {
 	font-size: 30px;
 	color: #ff001f;
-	margin-left: 5px;
 }
 
 .head5 .items .item .right .content .btn {
@@ -379,7 +362,6 @@
 	height: 35px;
 	line-height: 35px;
 	display: inline-block;
-	font-family: PingFangSC-Semibold;
 	font-size: 14px;
 	color: #ffffff;
 	text-align: center;
@@ -484,7 +466,6 @@
 	height: 35px;
 	line-height: 35px;
 	display: inline-block;
-	font-family: PingFangSC-Semibold;
 	font-size: 14px;
 	color: #ffffff;
 	text-align: center;

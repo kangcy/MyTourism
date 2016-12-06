@@ -52,6 +52,7 @@ function Favorite() {
 
 //登录弹窗
 function LoginTan(index) {
+	$("#login").find(".logincontent,.pwdcontent,.notuser,.notbind").addClass("hide");
 	//关闭弹窗
 	if(index <= 0) {
 		$("#tanbg").addClass("hide");
@@ -61,22 +62,22 @@ function LoginTan(index) {
 	//登录
 	else if(index == 1) {
 		$("#login").find(".register,.forget").addClass("hide");
-		$("#login").find(".login").removeClass("hide");
+		$("#login").find(".login,.logincontent").removeClass("hide");
 	}
 	//注册
 	else if(index == 2) {
 		$("#login").find(".login,.forget").addClass("hide");
-		$("#login").find(".register").removeClass("hide");
+		$("#login").find(".register,.logincontent").removeClass("hide");
 	}
 	//找回密码第一步
 	else if(index == 3) {
 		$("#login").find(".login,.register,.forget").addClass("hide");
-		$("#login").find(".step1").removeClass("hide");
+		$("#login").find(".step1,.logincontent").removeClass("hide");
 	}
 	//找回密码第二步
 	else if(index == 4) {
 		$("#login").find(".login,.register,.forget").addClass("hide");
-		$("#login").find(".step2").removeClass("hide");
+		$("#login").find(".step2,.logincontent").removeClass("hide");
 	}
 	//密码重置成功提示
 	else if(index == 5) {
@@ -131,7 +132,7 @@ function Link(index) {
 	} else if(index == 2) {
 		window.location.href = "exclusive.html"; //会员专享
 	} else if(index == 3) {
-		window.location.href = "personaltailor.html"; //私人订制
+		window.location.href = "personal.html"; //私人订制
 	} else if(index == 4) {
 		window.location.href = "travelchips.html"; //旅游众筹
 	} else if(index == 5) {
