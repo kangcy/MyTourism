@@ -6,6 +6,15 @@ window.onresize = function() {
 	InitBottom();
 }
 
+window.onscroll = function() {
+	var t = document.documentElement.scrollTop || document.body.scrollTop; //获取距离页面顶部的距离
+	if(t > 170) {
+		$("#subtitle").slideDown();
+	} else {
+		$("#subtitle").slideUp();
+	}
+}
+
 //初始化底部
 function InitBottom() {
 	if($("body").height() < window.innerHeight) {
@@ -113,4 +122,19 @@ function JoinTan(index) {
 	}
 	$("#tanbg").removeClass("hide");
 	$("#join").removeClass("hide").removeClass("bounceOut").addClass("bounceIn");
+}
+
+//页面跳转
+function Link(index) {
+	if(index == 1) {
+		window.location.href = "index.html"; //首页
+	} else if(index == 2) {
+		window.location.href = "exclusive.html"; //会员专享
+	} else if(index == 3) {
+		window.location.href = "personaltailor.html"; //私人订制
+	} else if(index == 4) {
+		window.location.href = "travelchips.html"; //旅游众筹
+	} else if(index == 5) {
+		window.location.href = "order.html"; //订购/退订
+	}
 }

@@ -578,6 +578,7 @@ body {
 	top: 0px;
 	left: 0px;
 	z-index: 50;
+	display: none;
 }
 
 .head22 .items {
