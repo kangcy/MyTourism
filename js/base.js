@@ -71,14 +71,19 @@ function JoinTan(index) {
 		$("#join").removeClass("bounceIn").addClass("bounceOut").addClass("hide");
 		return;
 	}
+	//详细信息
+	if(index == 1) {
+		$("#join").find(".add,.success").addClass("hide");
+		$("#join").find(".detail").removeClass("hide");
+	}
 	//我要参加
-	else if(index == 1) {
-		$("#join").find(".success").addClass("hide");
+	else if(index == 2) {
+		$("#join").find(".detail,.success").addClass("hide");
 		$("#join").find(".add").removeClass("hide");
 	}
 	//参加成功
-	else if(index == 2) {
-		$("#join").find(".add").addClass("hide");
+	else if(index == 3) {
+		$("#join").find(".detail,.add").addClass("hide");
 		$("#join").find(".success").removeClass("hide");
 	}
 	$("#tanbg").removeClass("hide");

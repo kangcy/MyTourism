@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/travelchips.css">
 		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="css/tan.css">
+		<link rel="stylesheet" href="css/scroll.css">
 		<link rel="stylesheet" href="js/msgbox/Page.css" />
 		<link rel="stylesheet" href="js/msgbox/msgbox.css" />
 	</head>
@@ -47,21 +48,24 @@
 				<div class="item">
 					<img class="left fl" src="img/index/9.png" />
 					<div class="right fl">
-						<div class="title1">梦在心中，行在脚下——Cycling France，向最伟大的自行车运动致敬</div>
-						<div class="full tl" style="line-height: 35px;">
+						<div class="title1">梦在心中，行在脚下——Cycling France，向最伟大的自行车运动致敬向最伟大的自行车运动致敬</div>
+						<div class="full tl mt10 mb10" style="line-height: 35px;">
 							<span class="title2 fl">市场价</span><span class="price fl">¥5999</span>
-							<div class="try fr">1元试试</div>
+							<div class="try fr" onclick="JoinTan(1)">1元试试</div>
 						</div>
 						<div class="totalnum mt15">
 							<div class="currnum"></div>
 							<div class="currpercent">35%</div>
 						</div>
 						<p><span class="title2">已支持</span><span class="already">¥1243</span><span class="title2 fr">剩余时间：34天</span></p>
-						<div class="list">
-							<div><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
-							<div><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
-							<div><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
-							<div><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
+						<div class="list scrollbar-rail">
+							<div class="notice"><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
+							<div class="notice"><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
+							<div class="notice"><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
+							<div class="notice"><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
+							<div class="notice"><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
+							<div class="notice"><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
+							<div class="notice"><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
 						</div>
 					</div>
 				</div>
@@ -69,20 +73,23 @@
 					<img class="left fl" src="img/index/9.png" />
 					<div class="right fl">
 						<div class="title1">梦在心中，行在脚下——Cycling France，向最伟大的自行车运动致敬</div>
-						<div class="full tl" style="line-height: 35px;">
+						<div class="full tl fl mt10 mb10" style="line-height: 35px;">
 							<span class="title2 fl">市场价</span><span class="price fl">¥5999</span>
-							<div class="try fr">1元试试</div>
+							<div class="try fr" onclick="JoinTan(1)">1元试试</div>
 						</div>
 						<div class="totalnum mt15">
 							<div class="currnum"></div>
 							<div class="currpercent">35%</div>
 						</div>
 						<p><span class="title2">已支持</span><span class="already">¥1243</span><span class="title2 fr">剩余时间：34天</span></p>
-						<div class="list">
-							<div><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
-							<div><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
-							<div><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
-							<div><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
+						<div class="list scrollbar-rail">
+							<div class="notice"><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
+							<div class="notice"><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
+							<div class="notice"><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
+							<div class="notice"><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
+							<div class="notice"><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
+							<div class="notice"><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
+							<div class="notice"><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
 						</div>
 					</div>
 				</div>
@@ -111,9 +118,9 @@
 		</div>
 
 		<!--参加众筹弹框-->
-		<div class="tanbg" id="tanbg"></div>
-		<div class="joincover" id="join">
-			<div class="detail">
+		<div class="tanbg hide" id="tanbg"></div>
+		<div class="joincover hide" id="join">
+			<div class="detail hide">
 				<div class="border1"></div>
 				<div class="border2"></div>
 				<div class="border3"></div>
@@ -142,10 +149,12 @@
 							<div class="currnum"></div>
 						</div>
 						<p class="numdesc full fl tl"><span class="fl">已支持：¥1243</span><span class="fr">目标金额：¥5999</span></p>
-						<div class="choose full fl tl mt30"><span>份额选择</span><span class="ml50 f20">-</span><input type="number" class="input ml15" /><span class="ml15 f20">+</span><span class="money ml50">¥</span><span class="currmoney ml5">8</span></div>
+						<div class="choose full fl tl mt30"><span class="fl">份额选择</span><span class="ml30 f20 point fl">-</span><input type="number" class="input ml15 fl" /><span class="ml15 f20 point fl">+</span>
+							<div class="fl"><span class="money ml30">¥</span><span class="currmoney ml5">8</span></div>
+						</div>
 						<p class="info full fl tl mt15">每增加一份，您的中奖概率将加大哦</p>
 						<p class="info full fl tl">您已阅读并同意《旅游管家服务使用协议》</p>
-						<div class="btn" onclick="JoinTan(1)">我要参加</div>
+						<div class="btn" onclick="JoinTan(2)">我要参加</div>
 					</div>
 				</div>
 			</div>
@@ -162,7 +171,7 @@
 					</div>
 					<div class="full tl">
 						<div class="name">支付费用：</div><span class="f18" style="color:#e97c1d;">¥8</span></div>
-					<div class="btn" onclick="JoinTan(2)">确认参与</div>
+					<div class="btn" onclick="JoinTan(3)">确认参与</div>
 					<span class="desc">该费用将从您的宽带费中扣除</span>
 				</div>
 			</div>
@@ -208,7 +217,7 @@
 				}
 			}
 		});
-		
-		 $('.scrollbar-dynamic').scrollbar();
+
+		$('.scrollbar-dynamic,.scrollbar-rail').scrollbar();
 	});
 </script>
