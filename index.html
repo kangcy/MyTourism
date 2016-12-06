@@ -39,7 +39,7 @@
 				<div class="item" onclick="Link(3)">私人订制</div>
 				<div class="item" onclick="Link(4)">旅游众筹</div>
 				<div class="item" onclick="Link(5)">订购/退订</div>
-				<div class="btn">立即订购</div>
+				<div class="btn" onclick="OrderTan(1)">立即订购</div>
 			</div>
 		</div>
 		<!--Banner-->
@@ -249,7 +249,7 @@
 			</div>
 			<div class="item item4" onclick="Totop()"></div>
 		</div>
-		<div class="tanbg" id="tanbg"></div>
+		<div class="tanbg hide" id="tanbg"></div>
 		<!--登录、注册框-->
 		<div class="logincover hide" id="login">
 			<div class="logincontent hide">
@@ -385,8 +385,8 @@
 			</div>
 		</div>
 		<!--立即订购-->
-		<div class="ordercover" id="order">
-			<div class="add">
+		<div class="ordercover hide" id="order">
+			<div class="detail hide">
 				<div class="logo">Member</div>
 				<div class="border10"></div>
 				<div class="border11"></div>
@@ -429,15 +429,40 @@
 					<div class="btn mt20" onclick="OrderTan(2)">确认加入</div>
 				</div>
 			</div>
-			<div class="success hide">
-				<div class="border1"></div>
+			<div class="add hide">
+				<div class="logo">Member</div>
+				<div class="border10"></div>
+				<div class="border11"></div>
 				<div class="border2"></div>
 				<div class="border3"></div>
 				<div class="border4"></div>
-				<img src="img/common/2.png" class="close" onclick="PanicTan(0)">
+				<img src="img/common/2.png" class="close" onclick="OrderTan(0)">
 				<div class="content">
-					<div class="full title mt30">感谢您选择旅游管家出行</div>
-					<div class="subtitle">我们的管家将尽快与您联系，请保持电话畅通</div>
+					<p class="f18 tl mt0">确认订单</p>
+					<div class="b1 fl"></div>
+					<div class="left">
+						<div class="f16 mt40">用户</div>
+						<div class="f18 bold">025-12345678</div>
+						<div class="btn1 mt50" onclick="OrderTan(0)">取消</div>
+					</div>
+					<div class="b2 fl"></div>
+					<div class="right">
+						<div class="f16 mt40">资费标准：</div>
+						<div class="f18 bold"><span class="cmoney">¥</span><span class="cmoney f30">10</span>&nbsp;/&nbsp;月</div>
+						<div class="btn2 mt50" onclick="OrderTan(3)">确定</div>
+					</div>
+				</div>
+			</div>
+			<div class="success hide">
+				<div class="logo">Member</div>
+				<div class="border10"></div>
+				<div class="border11"></div>
+				<div class="border2"></div>
+				<div class="border3"></div>
+				<div class="border4"></div>
+				<img src="img/common/2.png" class="close" onclick="OrderTan(0)">
+				<div class="content">
+					<div class="list"><img src="img/common/1.png" class="fl"><span class="ml10 fl">您已成为我们的会员，召唤管家开始服务。</span></div>
 				</div>
 			</div>
 		</div>
