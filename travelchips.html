@@ -59,7 +59,7 @@
 					<img class="left fl" src="img/index/9.png" />
 					<div class="right fl">
 						<div class="title1">梦在心中，行在脚下——Cycling France，向最伟大的自行车运动致敬向最伟大的自行车运动致敬</div>
-						<div class="full tl mt10 mb10" style="line-height: 35px;">
+						<div class="full tl mt10 mb10" style="line-height: 35px;display:inline-block;">
 							<span class="title2 fl">市场价</span><span class="price fl">¥5999</span>
 							<div class="try fr" onclick="JoinTan(1)">1元试试</div>
 						</div>
@@ -83,7 +83,7 @@
 					<img class="left fl" src="img/index/9.png" />
 					<div class="right fl">
 						<div class="title1">梦在心中，行在脚下——Cycling France，向最伟大的自行车运动致敬</div>
-						<div class="full tl fl mt10 mb10" style="line-height: 35px;">
+						<div class="full tl fl mt10 mb10" style="line-height: 35px;display:inline-block;">
 							<span class="title2 fl">市场价</span><span class="price fl">¥5999</span>
 							<div class="try fr" onclick="JoinTan(1)">1元试试</div>
 						</div>
@@ -176,7 +176,7 @@
 				<img src="img/common/2.png" class="close" onclick="JoinTan(0)">
 				<div class="content">
 					<div class="full tl">
-						<div class="name">您的手机号：</div><input type="text" class="input" maxlength="11" />
+						<div class="name">您的手机号：</div><input type="number" class="input" maxlength="11" />
 						<p class="cfff mt0 mb0 f12" style="text-indent:160px;">手机号仅用于通知获奖情况</p>
 					</div>
 					<div class="full tl">
@@ -228,6 +228,6 @@
 			}
 		});
 
-		$('.scrollbar-dynamic,.scrollbar-rail').scrollbar();
+		$('.scrollbar-dynamic,.scrollbar-rail').scrollbar();//滚动条美化
 	});
 </script>

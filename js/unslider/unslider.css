@@ -79,7 +79,7 @@
 }
 .banner .dots li.active
 {
-    background: red;
+    background: #fff;
     opacity: 1;
 }
 .banner .arrows

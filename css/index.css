@@ -204,7 +204,7 @@
 	width: 54%;
 	height: 100%;
 	display: inline-block;
-	margin: 3%;
+	margin: 2% 3%;
 }
 
 .head6 .item2 .right .title1 {
@@ -240,6 +240,7 @@
 	font-family: PingFangSC-Semibold;
 	font-size: 14px;
 	color: #ffffff;
+	cursor: pointer;
 }
 
 .head6 .item2 .right .totalnum {
@@ -283,13 +284,10 @@
 	border-radius: 3px;
 	width: 100%;
 	height: 80px;
-	overflow-x: hidden;
-	overflow-y: auto;
 }
 
-.head6 .item2 .right .list div {
-	padding: 3px 10px;
-	width: 100%;
+.head6 .item2 .right .list div.notice {
+	margin: 10px;
 }
 
 .head6 .item2 .right .list span:first-child {
@@ -336,12 +334,14 @@
 	font-family: PingFangSC-Semibold;
 	font-size: 30px;
 	color: #ff9436;
+	font-weight: bold;
 }
 
 .head7 .items .right .title2 {
 	font-family: PingFangSC-Light;
 	font-size: 24px;
 	color: #494949;
+	margin-top: 15px;
 }
 
 .head7 .items .more {
@@ -394,14 +394,11 @@
 	font-family: PingFangSC-Regular;
 	font-size: 14px;
 	color: #9b9b9b;
-	padding: 5px;
+	padding: 5px 10px;
 }
 
-.head7 .items .right .list .item .price span:first-child {
-	text-decoration: line-through;
-}
 
-.head7 .items .right .list .item .price span:last-child {
+.head7 .items .right .list .item .currprice {
 	font-family: PingFangSC-Regular;
 	font-size: 14px;
 	color: #ff9436;
@@ -412,7 +409,9 @@
 	font-family: PingFangSC-Regular;
 	font-size: 14px;
 	color: #2a2a2a;
-	padding: 0px 5px;
+	padding: 0px 10px;
+	line-height: 20px;
+	height: 60px;
 }
 
 
@@ -441,17 +440,17 @@
 }
 
 .head8 .items .left .title1 {
-	font-family: PingFangSC-Semibold;
 	font-size: 30px;
 	color: #ff9436;
 	text-align: right;
+	font-weight: bold;
 }
 
 .head8 .items .left .title2 {
-	font-family: PingFangSC-Light;
 	font-size: 24px;
 	color: #494949;
 	text-align: right;
+	margin-top: 15px;
 }
 
 .head8 .items .more {
@@ -500,29 +499,24 @@
 	height: 190px;
 }
 
-.head8 .items .left .list .item .price {
-	font-family: PingFangSC-Regular;
+.head8 .items .left .list .item div.price {
 	font-size: 14px;
 	color: #9b9b9b;
-	padding: 5px;
+	padding: 5px 10px;
 }
 
-.head8 .items .left .list .item .price span:first-child {
-	text-decoration: line-through;
-}
-
-.head8 .items .left .list .item .price span:last-child {
-	font-family: PingFangSC-Regular;
+.head8 .items .left .list .item div.price span.currprice {
 	font-size: 14px;
 	color: #ff9436;
 	margin-left: 15px;
 }
 
 .head8 .items .left .list .item div:last-child {
-	font-family: PingFangSC-Regular;
 	font-size: 14px;
 	color: #2a2a2a;
-	padding: 0px 5px;
+	padding: 0px 10px;
+	line-height: 20px;
+	height: 60px;
 }
 
 

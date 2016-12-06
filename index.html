@@ -8,6 +8,8 @@
 		<link rel="stylesheet" href="css/common.css">
 		<link rel="stylesheet" href="css/index.css">
 		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/scroll.css">
+		<link rel="stylesheet" href="css/tan.css">
 		<link rel="stylesheet" href="js/unslider/unslider.css" unslider="1">
 	</head>
 
@@ -102,25 +104,28 @@
 		<!--旅游众筹-->
 		<div class="full head6 fl tc">
 			<div class="items tl">
-				<div class="item1"><span class="title1 fl">旅游众筹</span><span class="title2 fl">Tourism crowds</span><span class="more fr">更多>></span></div>
+				<div class="item1"><span class="title1">旅游众筹</span><span class="title2">Tourism crowds</span><span class="more fr">更多>></span></div>
 				<div class="item2 mt20">
 					<img class="left fl" src="img/index/9.png" />
 					<div class="right fl">
 						<div class="title1">梦在心中，行在脚下——Cycling France，向最伟大的自行车运动致敬</div>
-						<div class="full tl" style="line-height: 35px;">
+						<div class="full tl mt10 mb10" style="line-height: 35px;display:inline-block;">
 							<span class="title2 fl">市场价</span><span class="price fl">¥5999</span>
-							<div class="try fr">1元试试</div>
+							<div class="try fr" onclick="JoinTan(1)">1元试试</div>
 						</div>
 						<div class="totalnum mt15">
 							<div class="currnum"></div>
 							<div class="currpercent">35%</div>
 						</div>
 						<p><span class="title2">已支持</span><span class="already">¥1243</span><span class="title2 fr">剩余时间：34天</span></p>
-						<div class="list">
-							<div><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
-							<div><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
-							<div><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
-							<div><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
+						<div class="list scrollbar-rail">
+							<div class="notice"><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
+							<div class="notice"><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
+							<div class="notice"><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
+							<div class="notice"><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
+							<div class="notice"><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
+							<div class="notice"><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
+							<div class="notice"><span>Angela Welch</span><span>1分钟前购买了1元自由行</span></div>
 						</div>
 					</div>
 				</div>
@@ -138,18 +143,18 @@
 					<div class="list">
 						<div class="item">
 							<img src="img/index/11.png" />
-							<div class="price"><span>原价¥3500</span><span class="price">¥1000</span></div>
+							<div class="price"><span class="linethrough">原价¥3500</span><span class="currprice">¥<span class="f20">1000</span></span></div>
 							<div>马尔代夫阿雅达岛Ayada4晚6日自助游南京出发</div>
 						</div>
 						<div class="item">
 							<img src="img/index/11.png" />
-							<div class="price"><span>原价¥3500</span><span class="price">¥1000</span></div>
+							<div class="price"><span class="linethrough">原价¥3500</span><span class="currprice">¥<span class="f20">1000</span></span></div>
 							<div>马尔代夫阿雅达岛Ayada4晚6日自助游南京出发</div>
 						</div>
 						<div class="item">
 							<img src="img/index/11.png" />
-							<div class="price"><span>原价¥3500</span><span class="price">¥1000</span></div>
-							<div>马尔代夫阿雅达岛Ayada4晚6日自助游南京出发</div>
+							<div class="price"><span class="linethrough">原价¥3500</span><span class="currprice">¥<span class="f20">1000</span></span></div>
+							<div>马尔代夫阿雅达岛Ayada4晚6日自助游南京出发马尔代夫阿雅达岛Ayada4晚6日自助游南京出发马尔代夫阿雅达岛Ayada4晚6日自助游南京出发马尔代夫阿雅达岛Ayada4晚6日自助游南京出发</div>
 						</div>
 					</div>
 				</div>
@@ -167,17 +172,17 @@
 					<div class="list">
 						<div class="item">
 							<img src="img/index/11.png" />
-							<div class="price"><span>原价¥3500</span><span class="price">¥1000</span></div>
+							<div class="price"><span class="linethrough">原价¥3500</span><span class="currprice">¥<span class="f20">1000</span></span></div>
 							<div>马尔代夫阿雅达岛Ayada4晚6日自助游南京出发</div>
 						</div>
 						<div class="item">
 							<img src="img/index/11.png" />
-							<div class="price"><span>原价¥3500</span><span class="price">¥1000</span></div>
+							<div class="price"><span class="linethrough">原价¥3500</span><span class="currprice">¥<span class="f20">1000</span></span></div>
 							<div>马尔代夫阿雅达岛Ayada4晚6日自助游南京出发</div>
 						</div>
 						<div class="item">
 							<img src="img/index/11.png" />
-							<div class="price"><span>原价¥3500</span><span class="price">¥1000</span></div>
+							<div class="price"><span class="linethrough">原价¥3500</span><span class="currprice">¥<span class="f20">1000</span></span></div>
 							<div>马尔代夫阿雅达岛Ayada4晚6日自助游南京出发</div>
 						</div>
 					</div>
@@ -276,7 +281,7 @@
 			</div>
 			<!--未绑定-->
 			<div class="notbind hide">
-				<div class="top1">提示<img src="img/common2.png" class="fr" onclick="LoginTan(0)"></div>
+				<div class="top1">提示<img src="img/common/2.png" class="fr" onclick="LoginTan(0)"></div>
 				<div class="top2"><img src="img/common/4.png" class="fl"><span class="ml10 fl">该手机号未绑定账户</span>
 				</div>
 			</div>
@@ -290,18 +295,94 @@
 				</div>
 			</div>
 		</div>
+		<!--参加众筹弹框-->
+		<div class="joincover hide" id="join">
+			<div class="detail hide">
+				<div class="border1"></div>
+				<div class="border2"></div>
+				<div class="border3"></div>
+				<div class="border4"></div>
+				<img src="img/common/2.png" class="close" onclick="JoinTan(0)">
+				<div class="content">
+					<div class="left scrollbar-dynamic">
+						<div class="info">
+							<div class="name">南京</div>
+							<div class="desc">城山日出峰顶观日出可谓是叹为观止。附近的油菜花一到春天就开得黄灿灿，在其间观看日出更是美妙无比。城山日出峰于2000年7月19日被指定为地方天然纪念物，2007年被联合国教科文组织指定为世界自然遗产。</div>
+							<div class="name">济州岛</div>
+							<div class="desc">城山日出峰顶观日出可谓是叹为观止。附近的油菜花一到春天就开得黄灿灿</div>
+							<div class="name">南京</div>
+							<div class="desc">城山日出峰顶观日出可谓是叹为观止。附近的油菜花一到春天就开得黄灿灿，在其间观看日出更是美妙无比。</div>
+							<div class="name">南京</div>
+							<div class="desc">城山日出峰顶观日出可谓是叹为观止。附近的油菜花一到春天就开得黄灿灿，在其间观看日出更是美妙无比。城山日出峰于2000年7月19日被指定为地方天然纪念物，2007年被联合国教科文组织指定为世界自然遗产。</div>
+							<div class="name">济州岛</div>
+							<div class="desc">城山日出峰顶观日出可谓是叹为观止。附近的油菜花一到春天就开得黄灿灿</div>
+							<div class="name">南京</div>
+							<div class="desc">城山日出峰顶观日出可谓是叹为观止。附近的油菜花一到春天就开得黄灿灿，在其间观看日出更是美妙无比。</div>
+						</div>
+					</div>
+					<div class="right">
+						<p class="title full fl mt0 tl">梦在心中，行在脚下——Cycling France，向最伟大的自行车运动致敬</p>
+						<div class="totalnum full fl tl mt10">
+							<div class="currnum"></div>
+						</div>
+						<p class="numdesc full fl tl"><span class="fl">已支持：¥1243</span><span class="fr">目标金额：¥5999</span></p>
+						<div class="choose full fl tl mt30"><span class="fl">份额选择</span><span class="ml30 f20 point fl">-</span><input type="number" class="input ml15 fl" /><span class="ml15 f20 point fl">+</span>
+							<div class="fl"><span class="money ml30">¥</span><span class="currmoney ml5">8</span></div>
+						</div>
+						<p class="info full fl tl mt15">每增加一份，您的中奖概率将加大哦</p>
+						<p class="info full fl tl">您已阅读并同意《旅游管家服务使用协议》</p>
+						<div class="btn" onclick="JoinTan(2)">我要参加</div>
+					</div>
+				</div>
+			</div>
+			<div class="add hide">
+				<div class="border1"></div>
+				<div class="border2"></div>
+				<div class="border3"></div>
+				<div class="border4"></div>
+				<img src="img/common/2.png" class="close" onclick="JoinTan(0)">
+				<div class="content">
+					<div class="full tl">
+						<div class="name">您的手机号：</div><input type="number" class="input" maxlength="11" />
+						<p class="cfff mt0 mb0 f12" style="text-indent:160px;">手机号仅用于通知获奖情况</p>
+					</div>
+					<div class="full tl">
+						<div class="name">支付费用：</div><span class="f18" style="color:#e97c1d;">¥8</span></div>
+					<div class="btn" onclick="JoinTan(3)">确认参与</div>
+					<span class="desc">该费用将从您的宽带费中扣除</span>
+				</div>
+			</div>
+			<div class="success hide">
+				<div class="border1"></div>
+				<div class="border2"></div>
+				<div class="border3"></div>
+				<div class="border4"></div>
+				<img src="img/common/2.png" class="close" onclick="JoinTan(0)">
+				<div class="content">
+					<div>
+						<div class="title1">您已成功参与旅游众筹</div>
+						<div class="title2">您的宽带账号为:<span class="ml15" style="color:#e97c1d;">b07824738</span></div>
+						<div class="title2">此号码将作为您的中奖凭证</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 
 </html>
 <script type="text/javascript " src="js/jquery-1.10.2.min.js "></script>
 <script type="text/javascript " src="js/base.js"></script>
 <script type="text/javascript " src="js/unslider/unslider.js "></script>
+<script type="text/javascript" src="js/jquery.scrollbar.js"></script>
 <script type="text/javascript ">
 	$(function() {
 		$('.banner').unslider({
 			speed: 500,
 			delay: 3000,
+			fluid: true,
 			complete: function() {}
 		});
+
+		$('.scrollbar-dynamic,.scrollbar-rail').scrollbar(); //滚动条美化
 	});
 </script>
