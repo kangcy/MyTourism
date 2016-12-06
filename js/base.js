@@ -6,6 +6,7 @@ window.onresize = function() {
 	InitBottom();
 }
 
+//初始化底部
 function InitBottom() {
 	if($("body").height() < window.innerHeight) {
 		$("#bottom").css({
@@ -13,6 +14,30 @@ function InitBottom() {
 			"bottom": "0px",
 			"left": "0px"
 		});
+	}
+}
+
+//返回顶部
+function Totop() {
+	$("html,body").animate({
+		scrollTop: 0
+	}, 500);
+}
+
+//收藏
+function Favorite() {
+	var url = "http://www.baidu.com.com";
+	var title = "百度";
+	try {
+		window.external.AddFavorite(url, title);
+		layer.msg("添加收藏成功")
+	} catch(e) {
+		try {
+			window.sidebar.addPanel(title, url, "");
+			layer.msg("添加收藏成功")
+		} catch(e) {
+			layer.msg("加入收藏失败,请使用Ctrl+D进行添加或者是按照您当前浏览器的操作方法将本页添加到收藏夹！");
+		}
 	}
 }
 

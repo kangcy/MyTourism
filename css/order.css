@@ -25,7 +25,7 @@
 }
 
 .head3 .items .border img {
-	width: 95px;
+	width: 245px;
 	height: 1px;
 	float: left;
 }
@@ -87,7 +87,7 @@
 }
 
 .head4 .items .border img {
-	width: 95px;
+	width: 185px;
 	height: 1px;
 	float: left;
 }
@@ -95,6 +95,7 @@
 .head4 .items .item {
 	float: left;
 	padding: 20px;
+	width: 1060px;
 }
 
 .head4 .items .item .left {
@@ -205,7 +206,7 @@
 }
 
 .head5 .items .border img {
-	width: 95px;
+	width: 200px;
 	height: 1px;
 	float: left;
 }
@@ -220,7 +221,7 @@
 	color: #4a4a4a;
 	margin-bottom: 20px;
 	font-weight: bold;
-	line-height: 20px;
+	line-height: 25px;
 }
 
 .head5 .items .item .desc {
@@ -228,7 +229,7 @@
 	font-size: 14px;
 	color: #6d6d6d;
 	margin-bottom: 20px;
-	line-height: 20px;
+	line-height: 25px;
 }
 
 
