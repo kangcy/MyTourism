@@ -11,7 +11,7 @@ html {
 	margin: 0px;
 	padding: 0px;
 	position: relative;
-	font-family: "PingFang SC";
+	font-family: "PingFangRegular";
 }
 
 html {
@@ -507,7 +507,7 @@ body {
 }
 
 .head1 .items {
-	width: 1000px;
+	width: 1100px;
 	height: 100px;
 	display: inline-block;
 }
@@ -534,28 +534,38 @@ body {
 }
 
 .head2 .items {
-	width: 1000px;
+	width: 1100px;
 	height: 100%;
 	display: inline-block;
 }
 
 .head2 .items .item {
-	width: 10%;
 	height: 100%;
 	display: inline-block;
 	text-align: center;
 	float: left;
-	color: #000;
-	font-weight: bold;
-}
-
-.head2 .items .item.first {
-	width: 20%;
+	color: #3d3d3d;
+	margin-right: 35px;
 }
 
 .head2 .items .item:hover {
 	color: #FF9436;
 	cursor: pointer;
+}
+
+.head2 .items .btn {
+	background: #e97c1d;
+	border-radius: 3px;
+	width: 120px;
+	height: 35px;
+	line-height: 35px;
+	display: inline-block;
+	font-family: PingFangSC-Semibold;
+	font-size: 14px;
+	color: #ffffff;
+	text-align: center;
+	float: right;
+	margin-top: 45px;
 }
 
 

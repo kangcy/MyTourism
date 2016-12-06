@@ -3,12 +3,11 @@
 .head3 .items {
 	width: 1100px;
 	display: inline-block;
-	margin-bottom: 50px;
 }
 
 .head3 .items .title {
 	font-size: 24px;
-	color: #e97c1d;
+	color: #4a4a4a;
 	line-height: 50px;
 }
 
@@ -66,12 +65,11 @@
 .head4 .items {
 	width: 1100px;
 	display: inline-block;
-	margin-bottom: 50px;
 }
 
 .head4 .items .title {
 	font-size: 24px;
-	color: #e97c1d;
+	color: #4a4a4a;
 	line-height: 50px;
 }
 
@@ -130,7 +128,7 @@
 
 .head4 .items .item .right .list {
 	border: 1px solid #e97c1d;
-	border-radius: 3px;
+	border-radius: 4px;
 	width: 218px;
 	height: 38px;
 	line-height: 38px;
@@ -142,6 +140,28 @@
 	margin-bottom: 20px;
 	margin-right: 15px;
 	cursor: pointer;
+	position: relative;
+}
+
+.head4 .items .item .right .list.curr .img1,
+.head4 .items .item .right .list.curr .img2 {
+	display: block;
+}
+
+.head4 .items .item .right .list .img1 {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	z-index: 1;
+	display: none;
+}
+
+.head4 .items .item .right .list .img2 {
+	position: absolute;
+	right: 3px;
+	bottom: 3px;
+	z-index: 2;
+	display: none;
 }
 
 .head4 .items .item .right .btn {
@@ -167,7 +187,7 @@
 
 .head5 .items .title {
 	font-size: 24px;
-	color: #e97c1d;
+	color: #4a4a4a;
 	line-height: 50px;
 }
 
@@ -197,7 +217,7 @@
 .head5 .items .item .name {
 	font-family: .PingFangSC-Semibold;
 	font-size: 14px;
-	color: #000;
+	color: #4a4a4a;
 	margin-bottom: 20px;
 	font-weight: bold;
 	line-height: 20px;
