@@ -277,6 +277,7 @@
 
 .joincover .detail .content .right {
 	width: 50%;
+	height: 100%;
 	padding-left: 5%;
 	float: right;
 	display: inline-block;

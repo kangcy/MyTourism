@@ -120,7 +120,7 @@
 				<div class="border4"></div>
 				<img src="img/common/2.png" class="close" onclick="JoinTan(0)">
 				<div class="content">
-					<div class="left">
+					<div class="left scrollbar-dynamic">
 						<div class="info">
 							<div class="name">南京</div>
 							<div class="desc">城山日出峰顶观日出可谓是叹为观止。附近的油菜花一到春天就开得黄灿灿，在其间观看日出更是美妙无比。城山日出峰于2000年7月19日被指定为地方天然纪念物，2007年被联合国教科文组织指定为世界自然遗产。</div>
@@ -188,6 +188,7 @@
 <script type="text/javascript " src="js/base.js"></script>
 <script type="text/javascript" src="js/msgbox/msgbox.js"></script>
 <script type="text/javascript" src="js/jquery.myPagination5.0.js"></script>
+<script type="text/javascript" src="js/jquery.scrollbar.js"></script>
 <script type="text/javascript ">
 	var currentIndex = 1;
 	var recordCount = 100;
@@ -207,5 +208,7 @@
 				}
 			}
 		});
+		
+		 $('.scrollbar-dynamic').scrollbar();
 	});
 </script>
