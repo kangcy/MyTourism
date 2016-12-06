@@ -397,7 +397,6 @@
 	padding: 5px 10px;
 }
 
-
 .head7 .items .right .list .item .currprice {
 	font-family: PingFangSC-Regular;
 	font-size: 14px;
@@ -529,7 +528,7 @@
 	background-repeat: no-repeat;
 	background-size: 100% background-color: #f9f9f9;
 	background-color: #f2f2f2;
-	margin-top: 50px;
+	margin-top: 40px;
 }
 
 .head9 .items {
@@ -550,11 +549,11 @@
 }
 
 .head9 .items .currnum {
-	/*background: #ff9436;*/
-	background: url(../img/index/16.png) repeat;
+	background-color: #e97c1d;
+	background-image: url(../img/index/16.png);
 	border-radius: 100px;
 	width: 100px;
-	height: 8px;
+	height: 20px;
 	position: absolute;
 	left: 0px;
 	top: 0px;
@@ -568,6 +567,19 @@
 	position: absolute;
 	left: 0px;
 	top: -48px;
+}
+
+.head9 .items .currpercent .car {
+	margin-top: 20px;
+	margin-left: -7px;
+}
+
+.head9 .items .currpercent .num {
+	margin-top: 4px;
+	margin-left: -65px;
+	font-size: 14px;
+	color: #ffffff;
+	float: left;
 }
 
 .head9 .items .left {
@@ -658,6 +670,20 @@
 	cursor: pointer;
 }
 
+.head9 .items .left .btn {
+	background: #e97c1d;
+	border-radius: 3px;
+	width: 120px;
+	height: 35px;
+	line-height: 35px;
+	display: inline-block;
+	font-family: PingFangSC-Semibold;
+	font-size: 14px;
+	color: #ffffff;
+	text-align: center;
+	margin-top: 10px;
+}
+
 .head9 .items .right {
 	background: #ffffff;
 	border-radius: 8px;
@@ -688,4 +714,10 @@
 	margin: 0px 30px;
 	float: left;
 	margin-top: 20px;
+	color: #636363;
+}
+
+.head9 .items .right .item span {
+	color: #000;
+	margin-left: 15px;
 }
