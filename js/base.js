@@ -169,3 +169,8 @@ function Link(index) {
 		window.location.href = "order.html"; //订购/退订
 	}
 }
+
+//跳转众筹详情页
+function Travel(id) {
+	window.open("travelchip.html?id=" + id)
+}
