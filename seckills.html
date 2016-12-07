@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>限时秒杀</title>
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/seckills.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/tan.css">
+		<link rel="stylesheet" href="css/scroll.css">
+		<link rel="stylesheet" href="js/msgbox/Page.css" />
+		<link rel="stylesheet" href="js/msgbox/msgbox.css" />
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="full head1 tc fl">
+			<div class="items tr">
+				<div class="item" onclick="LoginTan(1)">登录</div>
+				<div class="item border" onclick="LoginTan(2)">注册</div>
+			</div>
+		</div>
+		<div class="full head2 tc fl">
+			<div class="items f20">
+				<div class="item"><img src="img/index/logo.png" /></div>
+				<div class="item" onclick="Link(1)">首页</div>
+				<div class="item" onclick="Link(2)">会员专享</div>
+				<div class="item" onclick="Link(3)">私人订制</div>
+				<div class="item" onclick="Link(4)">旅游众筹</div>
+				<div class="item" onclick="Link(5)">订购/退订</div>
+				<div class="btn" onclick="OrderTan(1)">立即订购</div>
+			</div>
+		</div>
+		<div class="full head22 tc fl" id="subtitle">
+			<div class="items f16 tr">
+				<div class="item" onclick="Link(1)">首页</div>
+				<div class="item" onclick="Link(2)">会员专享</div>
+				<div class="item" onclick="Link(3)">私人订制</div>
+				<div class="item" onclick="Link(4)">旅游众筹</div>
+				<div class="item" onclick="Link(5)">订购/退订</div>
+				<div class="btn" onclick="OrderTan(1)">立即订购</div>
+			</div>
+		</div>
+		<div class="full head3 tc fl">
+			<div class="items">
+				<div class="item curr">全部</div>
+				<div class="item">进行中</div>
+				<div class="item">即将开始</div>
+				<div class="item">已完成</div>
+			</div>
+		</div>
+
+		<!--限时秒杀-->
+		<div class="full head4 fl tc">
+			<div class="items tl">
+				<div class="item">
+					<img class="left fl" src="img/exclusive/2.png" />
+					<div class="right fl">
+						<img class="icon" src="img/exclusive/1.png" />
+						<div class="content">
+							<div class="title1 bold point" onclick="Product(7)">南京飞往九寨沟3日游</div>
+							<div class="price">
+								<p class="full">原价<span class="ml15 f16" style="color:#4a4a4a;">¥298</span></p>
+								<p class="full">现价<span class="money">¥</span><span class="currmoney">298</span><span class="score">+200积分</span><span class="fr">如何获取积分？</span><span class="fr mr30">查看积分</span></p>
+							</div>
+							<div class="full tl mt15">
+								<span class="title2 fl">数量</span><span class="ml15 f16" style="color:#4a4a4a;">1</span>
+								<span class="ml15">已有<span style="color: #ff001f;">0</span>人参与</span>
+							</div>
+							<div class="full fl mt15" style="line-height:38px;"><span class="fl">出游日期</span><input type="text" class="input Wdate ml10" id="time" onclick="WdatePicker({ el: $dp.$('time'), dateFmt: 'yyyy-MM-dd' })" style="width:160px" /><span class="fl ml10">出游人数</span><input type="number" class="input ml10" /><span class="fl ml5">人</span></div>
+							<div class="full fl countdown">
+								<div class="btn fl" onclick="RemindTan(1)">活动提醒</div><img src="img/exclusive/6.png" class="mt10 ml15" /><span class="ml5">活动倒计时：</span><span class="ml10 f16" style="color:#4a4a4a;">01天12时20分24秒</span></div>
+							<div class="action full"><img src="img/exclusive/3.png" /><span class="ml5">通知好友</span><img src="img/exclusive/4.png" class="ml20" /><span class="ml5">收藏</span><img src="img/exclusive/5.png" class="ml20" /><span class="ml5">分享</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img class="left fl" src="img/exclusive/2.png" />
+					<div class="right fl">
+						<img class="icon" src="img/exclusive/1.png" />
+						<div class="content">
+							<div class="title1 bold point" onclick="Product(7)">南京飞往九寨沟3日游</div>
+							<div class="price">
+								<p class="full">原价<span class="ml15 f16" style="color:#4a4a4a;">¥298</span></p>
+								<p class="full">现价<span class="money">¥</span><span class="currmoney">298</span><span class="score">+200积分</span><span class="fr">如何获取积分？</span><span class="fr mr30">查看积分</span></p>
+							</div>
+							<div class="full tl mt15">
+								<span class="title2 fl">数量</span><span class="ml15 f16" style="color:#4a4a4a;">1</span>
+								<span class="ml15">已有<span style="color: #ff001f;">0</span>人参与</span>
+							</div>
+							<div class="full fl mt15" style="line-height:38px;"><span class="fl">出游日期</span><input type="text" class="input Wdate ml10" id="time" onclick="WdatePicker({ el: $dp.$('time'), dateFmt: 'yyyy-MM-dd' })" style="width:160px" /><span class="fl ml10">出游人数</span><input type="number" class="input ml10" /><span class="fl ml5">人</span></div>
+							<div class="full fl countdown">
+								<div class="btn fl" onclick="RemindTan(1)">活动提醒</div><img src="img/exclusive/6.png" class="mt10 ml15" /><span class="ml5">活动倒计时：</span><span class="ml10 f16" style="color:#4a4a4a;">01天12时20分24秒</span></div>
+							<div class="action full"><img src="img/exclusive/3.png" /><span class="ml5">通知好友</span><img src="img/exclusive/4.png" class="ml20" /><span class="ml5">收藏</span><img src="img/exclusive/5.png" class="ml20" /><span class="ml5">分享</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="divPager" align="center" style="margin-top:50px;float: left;width: 100%;"></div>
+
+		<!--底部-->
+		<div class="bottom tc" id="bottom">
+			<p class="bottom1"><span>关于我们</span><span class="split">|</span><span>联系我们</span><span class="split">|</span><span>服务协议</span><span class="split">|</span><span>帮助中心</span></p>
+			<p class="bottom2"><span>友情链接：</span><span class="split">&nbsp;</span><span>链接1</span><span class="split">&nbsp;</span><span>链接2</span><span class="split">&nbsp;</span><span>链接3</span><span class="split">&nbsp;</span><span>链接4</span><span class="split">&nbsp;</span><span>链接5</span></p>
+			<div class="bottom3">2016旅游管家 版权所有 技术支持：创跃慧工作室</div>
+		</div>
+		<!--悬浮框-->
+		<div class="fright">
+			<div class="item item1">
+				<div class="tip">电话</div>
+			</div>
+			<div class="item item2">
+				<div class="tip">咨询</div>
+			</div>
+			<div class="item item3">
+				<div class="tip">微信</div>
+			</div>
+			<div class="item item4" onclick="Totop()"></div>
+		</div>
+
+		<!--参加众筹弹框-->
+		<div class="tanbg hide" id="tanbg"></div>
+		<div class="joincover hide" id="join">
+			<div class="detail hide">
+				<div class="logo">Gather</div>
+				<div class="border10"></div>
+				<div class="border11"></div>
+				<div class="border2"></div>
+				<div class="border3"></div>
+				<div class="border4"></div>
+				<img src="img/common/2.png" class="close" onclick="JoinTan(0)">
+				<div class="content">
+					<div class="left scrollbar-dynamic">
+						<div class="info">
+							<div class="name">南京</div>
+							<div class="desc">城山日出峰顶观日出可谓是叹为观止。附近的油菜花一到春天就开得黄灿灿，在其间观看日出更是美妙无比。城山日出峰于2000年7月19日被指定为地方天然纪念物，2007年被联合国教科文组织指定为世界自然遗产。</div>
+							<div class="name">济州岛</div>
+							<div class="desc">城山日出峰顶观日出可谓是叹为观止。附近的油菜花一到春天就开得黄灿灿</div>
+							<div class="name">南京</div>
+							<div class="desc">城山日出峰顶观日出可谓是叹为观止。附近的油菜花一到春天就开得黄灿灿，在其间观看日出更是美妙无比。</div>
+							<div class="name">南京</div>
+							<div class="desc">城山日出峰顶观日出可谓是叹为观止。附近的油菜花一到春天就开得黄灿灿，在其间观看日出更是美妙无比。城山日出峰于2000年7月19日被指定为地方天然纪念物，2007年被联合国教科文组织指定为世界自然遗产。</div>
+							<div class="name">济州岛</div>
+							<div class="desc">城山日出峰顶观日出可谓是叹为观止。附近的油菜花一到春天就开得黄灿灿</div>
+							<div class="name">南京</div>
+							<div class="desc">城山日出峰顶观日出可谓是叹为观止。附近的油菜花一到春天就开得黄灿灿，在其间观看日出更是美妙无比。</div>
+						</div>
+					</div>
+					<div class="right">
+						<p class="title full fl mt0 tl">梦在心中，行在脚下——Cycling France，向最伟大的自行车运动致敬</p>
+						<div class="totalnum full fl tl mt10">
+							<div class="currnum"></div>
+						</div>
+						<p class="numdesc full fl tl"><span class="fl">已支持：¥1243</span><span class="fr">目标金额：¥5999</span></p>
+						<div class="choose full fl tl mt30"><span class="fl">份额选择</span><span class="ml30 f20 point fl">-</span><input type="number" class="input ml15 fl" /><span class="ml15 f20 point fl">+</span>
+							<div class="fl"><span class="money ml30">¥</span><span class="currmoney ml5">8</span></div>
+						</div>
+						<p class="info full fl tl mt15">每增加一份，您的中奖概率将加大哦</p>
+						<p class="info full fl tl">您已阅读并同意《旅游管家服务使用协议》</p>
+						<div class="btn" onclick="JoinTan(2)">我要参加</div>
+					</div>
+				</div>
+			</div>
+			<div class="add hide">
+				<div class="logo">Gather</div>
+				<div class="border10"></div>
+				<div class="border11"></div>
+				<div class="border2"></div>
+				<div class="border3"></div>
+				<div class="border4"></div>
+				<img src="img/common/2.png" class="close" onclick="JoinTan(0)">
+				<div class="content">
+					<div class="full tl">
+						<div class="name">您的手机号：</div><input type="number" class="input" maxlength="11" />
+						<p class="cfff mt0 mb0 f12" style="text-indent:160px;">手机号仅用于通知获奖情况</p>
+					</div>
+					<div class="full tl">
+						<div class="name">支付费用：</div><span class="f18" style="color:#e97c1d;">¥8</span></div>
+					<div class="btn" onclick="JoinTan(3)">确认参与</div>
+					<span class="desc">该费用将从您的宽带费中扣除</span>
+				</div>
+			</div>
+			<div class="success hide">
+				<div class="logo">Gather</div>
+				<div class="border10"></div>
+				<div class="border11"></div>
+				<div class="border2"></div>
+				<div class="border3"></div>
+				<div class="border4"></div>
+				<img src="img/common/2.png" class="close" onclick="JoinTan(0)">
+				<div class="content">
+					<div>
+						<div class="title1">您已成功参与旅游众筹</div>
+						<div class="title2">您的宽带账号为:<span class="ml15" style="color:#e97c1d;">b07824738</span></div>
+						<div class="title2">此号码将作为您的中奖凭证</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript " src="js/jquery-1.10.2.min.js "></script>
+<script type="text/javascript " src="js/base.js"></script>
+<script type="text/javascript" src="js/msgbox/msgbox.js"></script>
+<script type="text/javascript" src="js/jquery.myPagination5.0.js"></script>
+<script type="text/javascript" src="js/jquery.scrollbar.js"></script>
+<script type="text/javascript ">
+	var currentIndex = 1;
+	var recordCount = 100;
+	var pageSize = 5;
+	$(function() {
+		$("#divPager").myPagination({
+			currPage: currentIndex,
+			pageCount: Math.ceil(recordCount / pageSize),
+			pageSize: pageSize,
+			links: 'javascript:void(0);',
+			cssStyle: 'jogger',
+			ajax: {
+				on: false,
+				onClick: function(page) {
+					ZENG.msgbox.show(" 正在加载" + page + "页，请稍后...", 6, 1000);
+					window.location.href = "seckills.html?page=" + page;
+				}
+			}
+		});
+
+		$('.scrollbar-dynamic,.scrollbar-rail').scrollbar(); //滚动条美化
+	});
+</script>

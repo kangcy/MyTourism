@@ -170,7 +170,29 @@ function Link(index) {
 	}
 }
 
+//跳转限时秒杀列表页
+function Seckills() {
+	window.open("seckills.html")
+}
+//跳转会员特卖列表页
+function Sales() {
+	window.open("sales.html")
+}
+//跳转豪团尾单列表页
+function Groups() {
+	window.open("groups.html")
+}
+//跳转众筹列表页
+function Travels() {
+	window.open("travelchips.html")
+}
+
 //跳转众筹详情页
 function Travel(id) {
 	window.open("travelchip.html?id=" + id)
+}
+
+//跳转产品详情页
+function Product(id) {
+	window.open("productdetail.html" + id)
 }
