@@ -155,6 +155,28 @@ function OrderTan(index) {
 	$order.removeClass("hide").removeClass("bounceOut").addClass("bounceIn");
 }
 
+//提醒弹窗
+function RemindTan(index) { //关闭弹窗
+	var $remind = $("#remind");
+	if(index <= 0) {
+		$("#tanbg").addClass("hide");
+		$remind.removeClass("bounceIn").addClass("bounceOut").addClass("hide");
+		return;
+	}
+	//添加提醒
+	else if(index == 1) {
+		$remind.find(".success").addClass("hide");
+		$remind.find(".add").removeClass("hide");
+	}
+	//添加成功
+	else if(index == 2) {
+		$remind.find(".add").addClass("hide");
+		$remind.find(".success").removeClass("hide");
+	}
+	$("#tanbg").removeClass("hide");
+	$remind.removeClass("hide").removeClass("bounceOut").addClass("bounceIn");
+}
+
 //页面跳转
 function Link(index) {
 	if(index == 1) {
